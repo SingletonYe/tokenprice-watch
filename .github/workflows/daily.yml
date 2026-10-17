@@ -2,12 +2,15 @@ name: Daily price snapshot and deploy
 
 # The site's whole value proposition is that it is current. This workflow is the
 # guarantee: every day it re-collects pricing, writes a dated snapshot + diff,
-# rebuilds the static site, runs the quality gate, commits the data (permanent
-# history), and publishes to GitHub Pages.
+# rebuilds the static site, runs the quality gate, commits the data (which is the
+# permanent price history), and publishes to GitHub Pages.
+#
+# No secrets, no API keys, no dependencies to install — the collector and the
+# builder are standard-library Python.
 
 on:
   schedule:
-    # 06:17 UTC daily — a deliberately off-the-hour slot, since cron peaks on :00
+    # 06:17 UTC daily — deliberately off the hour, since cron peaks on :00
     - cron: "17 6 * * *"
   workflow_dispatch:
     inputs:
@@ -36,33 +39,37 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Collect today's snapshot and diff
         run: python3 src/fetch_data.py
-        # aborts without writing if the upstream API misbehaves (<50 models)
+        # aborts without writing anything if upstream returns an implausible payload
 
       - name: Build the static site
-        run: python3 src/build_site.py --out site
+        run: |
+          python3 src/build_site.py --out site \
+            --base-url "${{ steps.pages.outputs.base_url }}" \
+            --path-prefix "${{ steps.pages.outputs.base_path }}"
 
       - name: Quality gate
-        run: python3 src/qa_check.py --out site
+        run: python3 src/qa_check.py --out site --path-prefix "${{ steps.pages.outputs.base_path }}"
 
-      - name: Commit data and rebuilt site
+      - name: Commit the data (the permanent price history)
         run: |
           git config user.name  "tokenprice-watch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data site site/sitemap.xml 2>/dev/null || true
-          git add data site
+          git add data
           if git diff --cached --quiet; then
-            echo "no changes to commit"
+            echo "No data changes today."
           else
             git commit -m "chore(data): daily snapshot $(date -u +%F)"
             git push
           fi
 
-      - uses: actions/configure-pages@v5
-        if: hashFiles('site/index.html') != ''
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
 

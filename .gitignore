@@ -6,3 +6,4 @@ generated/
 previews/
 *.log
 .DS_Store
+site/

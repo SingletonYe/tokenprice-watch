@@ -94,7 +94,7 @@ data/snapshots/YYYY-MM-DD.json   immutable daily price rows (≈36 KiB/day)
 data/changes/YYYY-MM-DD.json     daily diff: added / removed / price moves
 data/latest.json            today's full model detail (descriptions, modalities, prices)
 data/archive.json           retired endpoints with last-known prices
-site/                       build output (committed for GitHub Pages)
+site/                       build output (git-ignored; Pages deploys it as an artifact)
 .github/workflows/daily.yml the daily cron pipeline
 MONETIZATION.md             unit economics, keyword targets, 90-day plan, risk register
 ```
