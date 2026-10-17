@@ -1,5 +1,12 @@
 # TokenPrice Watch — Monetization Playbook
 
+**Live:** https://tokenprice-watch.okou.app · **Mirror:** https://singletonye.github.io/tokenprice-watch/ ·
+**Code and price history:** https://github.com/SingletonYe/tokenprice-watch
+
+The site, the daily data pipeline, the ad slots, the affiliate link map, the sponsor bar and the
+newsletter capture are all live. What remains is traffic and the account applications below —
+neither of which is automatic.
+
 **Target:** $50/day = **$1,500/month** (30-day basis), for a solo owner with ~1 hour/day.
 
 **Evidence standard.** Every volume, CPC, difficulty score, SERP composition and backlink count below was observed live on **2026-10-17** via `okou seo` (DataForSEO) and `okou web-search`. Program thresholds come from vendor primary sources where cited. Anything unverified is marked **[ESTIMATE]** or **[UNVALIDATED]**. Nothing here is a guarantee.
