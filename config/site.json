@@ -1,0 +1,32 @@
+{
+  "site_name": "TokenPrice Watch",
+  "tagline": "Daily LLM API price tracker \u2014 every model, every price change",
+  "description": "TokenPrice Watch tracks LLM / AI inference API pricing across hundreds of models and providers, updated every day. Compare cost per 1M tokens, spot price drops, and find the cheapest API for coding, long context, vision and high-volume workloads.",
+  "base_url": "https://tokenprice-watch.okou.app",
+  "contact_email": "peiqing6888@gmail.com",
+  "owner": "Peiqing Ye",
+  "_comment_monetization": "Fill these in to turn on revenue. The site renders ad slots, affiliate links and a sponsor bar even when empty, using safe fallbacks, so nothing breaks.",
+  "adsense": {
+    "client": "",
+    "slot_top": "",
+    "slot_inline": "",
+    "slot_sidebar": ""
+  },
+  "affiliates": {
+    "_comment": "Map a provider slug to your referral URL. Example: {\"openrouter\": \"https://openrouter.ai/?ref=XXXX\"}. Empty = plain provider link.",
+    "map": {}
+  },
+  "newsletter": {
+    "provider": "",
+    "action": "",
+    "headline": "Get the daily price-drop email"
+  },
+  "sponsor": {
+    "label": "",
+    "url": ""
+  },
+  "analytics": {
+    "plausible_domain": "",
+    "cloudflare_beacon": ""
+  }
+}

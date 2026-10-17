@@ -1,0 +1,77 @@
+name: Daily price snapshot and deploy
+
+# The site's whole value proposition is that it is current. This workflow is the
+# guarantee: every day it re-collects pricing, writes a dated snapshot + diff,
+# rebuilds the static site, runs the quality gate, commits the data (permanent
+# history), and publishes to GitHub Pages.
+
+on:
+  schedule:
+    # 06:17 UTC daily — a deliberately off-the-hour slot, since cron peaks on :00
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Why are you running this manually?"
+        required: false
+        default: "manual run"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect today's snapshot and diff
+        run: python3 src/fetch_data.py
+        # aborts without writing if the upstream API misbehaves (<50 models)
+
+      - name: Build the static site
+        run: python3 src/build_site.py --out site
+
+      - name: Quality gate
+        run: python3 src/qa_check.py --out site
+
+      - name: Commit data and rebuilt site
+        run: |
+          git config user.name  "tokenprice-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data site site/sitemap.xml 2>/dev/null || true
+          git add data site
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "chore(data): daily snapshot $(date -u +%F)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+        if: hashFiles('site/index.html') != ''
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
