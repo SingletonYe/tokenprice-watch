@@ -2,13 +2,50 @@
  "date": "2026-10-17",
  "added": [],
  "removed": [],
- "price_changes": [],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "1.89e-08",
+   "to": "1.8e-08",
+   "pct": -4.8,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "1.89e-08",
+   "to": "1.8e-08",
+   "pct": -4.8,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "1.89e-08",
+   "to": "1.8e-08",
+   "pct": -4.8,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "1.89e-08",
+   "to": "1.8e-08",
+   "pct": -4.8,
+   "direction": "down"
+  }
+ ],
  "counts": {
   "models": 470,
   "added": 0,
   "removed": 0,
-  "price_changes": 0,
-  "drops": 0,
+  "price_changes": 4,
+  "drops": 4,
   "hikes": 0
  }
 }
