@@ -103,14 +103,30 @@ MONETIZATION.md             unit economics, keyword targets, 90-day plan, risk r
 
 | Path | Count | Purpose / search intent |
 |---|---|---|
-| `/model/<vendor>/<slug>/` | 381 | Per-model pricing, volume cost table, variants, alternatives, FAQ |
-| `/provider/<vendor>/` | 67 | Per-provider pricing and "what to know before you commit" |
-| `/cheapest/<use-case>/` | 12 | Cheapest API for coding, agents, long context, vision, reasoning, batch, caching, output, 1M context, free, best value |
-| `/changes/<date>/` | 1/day | Dated price-change log (permanent archive) |
-| `/models/` | 1 | Full sortable/filterable table of every endpoint |
-| `/cost-calculator/` | 1 | Input traffic → monthly bill per model |
-| `/retired/` | 1 | Delisted models and their last observed prices |
-| `/about/ /methodology/ /advertise/ /privacy/ /terms/` | 5 | Trust, E-E-A-T, sponsor sales, ad-network requirements |
+| `/model/<vendor>/<slug>.html` | 381 | Per-model pricing, volume cost table, variants, alternatives, FAQ |
+| `/provider/<vendor>.html` | 67 | Per-provider pricing and "what to know before you commit" |
+| `/cheapest/<use-case>.html` | 12 | Cheapest API for coding, agents, long context, vision, reasoning, batch, caching, output, 1M context, free, best value |
+| `/changes/<date>.html` | 1/day | Dated price-change log (permanent archive) |
+| `/models.html` | 1 | Full sortable/filterable table of every endpoint |
+| `/cost-calculator.html` | 1 | Input traffic → monthly bill per model |
+| `/retired.html` | 1 | Delisted models and their last observed prices |
+| `/about.html /methodology.html /advertise.html /privacy.html /terms.html` | 5 | Trust, E-E-A-T, sponsor sales, ad-network requirements |
+
+Pages are emitted as explicit `.html` files rather than directory indexes, because
+directory-style URLs (`/models/`) are only resolved by some static hosts. Flat paths work
+everywhere, and canonical tags plus the sitemap are absolute, so the two deployments can
+differ in domain without any link ambiguity.
+
+### Two data details worth knowing
+
+* **Router endpoints** (`openrouter/auto`, `openrouter/pareto-code`, `nvidia/switchyard`, …)
+  are published with a `-1` price sentinel, meaning "the cost depends on which model gets
+  routed to". Negative values are treated as *absent* and the endpoint is flagged dynamic: it
+  shows `Varies`, explains itself on its page, and is excluded from every price ranking rather
+  than silently distorting a table. The quality gate fails the build if a negative price ever
+  reaches `data/`.
+* **Variants** (`:batch`, `:free`) share one page with their base model instead of generating
+  near-duplicate pages, which keeps the site out of thin-content territory.
 
 ---
 
@@ -198,7 +214,28 @@ hosting is included, the data source is public and keyless, and there is no data
 
 ---
 
-## 8. Roadmap (already scoped)
+## 8. Verification performed on the live deployments
+
+Both deployments were rebuilt from this exact code and checked page by page, not just at the
+root:
+
+| Check | Result |
+|---|---|
+| Every URL in the live sitemap fetched (472 pages) on `tokenprice-watch.okou.app` | **472/472 returned HTTP 200, 0 failures** |
+| GitHub Pages redeployed by CI from the latest commit | workflow `success`; `/`, `/models.html`, `/cost-calculator.html`, `/cheapest/cheapest-for-coding.html`, `/model/openrouter/auto.html` all 200 |
+| Quality gate on both builds | `PASS` — 473 pages, unique titles/descriptions, balanced HTML, no broken internal links, valid JSON-LD, sitemap consistent |
+| Price sorting, filtering and search in the browser | 381 rows rendered; filtering `claude` → 19 models; sorting by context → 1M-token models first |
+| Cost calculator in the browser | 1.14B tokens/month → cheapest tracked option `$0` (free tier), median `$840`, most expensive `$279,000` |
+| Router endpoint rendering | `Varies` instead of a bogus negative price, with an explanation on the page |
+| Daily pipeline in CI | collect → build → gate → commit data → deploy, **success** on a real `workflow_dispatch` run |
+| Scheduled automation | fired at its scheduled time and queued its run |
+
+The initial live check is what caught the directory-URL problem, the negative router prices
+and the retired-model dead links — which is exactly why it runs before any traffic arrives.
+
+---
+
+## 9. Roadmap (already scoped)
 
 1. Publish the daily change log as an email + an X/Reddit thread automatically (the diff is
    already machine-readable — `data/changes/*.json`).
