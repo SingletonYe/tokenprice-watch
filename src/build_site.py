@@ -133,6 +133,21 @@ def display_name(name: str, vendor: str = "") -> str:
     return name
 
 
+def page_url(path: str) -> str:
+    """Flat, host-agnostic URL for a page: /models.html, /model/a/b.html.
+
+    Directory-style URLs (/models/) only work on hosts that resolve a directory
+    to its index.html. Several static hosts do not, so every deployment uses
+    explicit .html paths, which work everywhere and keep canonicals unambiguous.
+    """
+    rel = (path or "/").strip("/")
+    if rel in ("", "index.html", "index.htm"):
+        return "/"
+    if not rel.endswith(".html"):
+        rel += ".html"
+    return "/" + rel
+
+
 def model_path(model_or_id) -> str:
     """Canonical URL for a model page, shared by every renderer."""
     if isinstance(model_or_id, dict):
@@ -141,7 +156,7 @@ def model_path(model_or_id) -> str:
         mid = str(model_or_id)
         base, _, variant = mid.partition(":")
         vendor, _, slug = base.partition("/")
-    return f"/model/{vendor_key(vendor)}/{slugify(slug)}/"
+    return page_url(f"/model/{vendor_key(vendor)}/{slugify(slug)}")
 
 
 def ordinal(n: int) -> str:
@@ -359,7 +374,7 @@ class Builder:
             f'<span class="ad-tag">{esc(label)}</span>'
             '<span>This slot is available. Reach '
             f'<a href="mailto:{esc(self.cfg.get("contact_email", ""))}">{esc(self.cfg.get("contact_email", ""))}</a>'
-            ' — <a href="/advertise/">sponsor rates</a>.</span>'
+            ' — <a href="/advertise.html">sponsor rates</a>.</span>'
             "</aside>"
         )
 
@@ -389,7 +404,7 @@ class Builder:
               canonical_path: str | None = None, jsonld: list | None = None,
               breadcrumbs: list[tuple[str, str]] | None = None, body_class: str = "") -> str:
         cfg = self.cfg
-        canonical = self.url(canonical_path or path)
+        canonical = self.url(page_url(canonical_path or path))
         ld = ""
         crumbs_ld = None
         if breadcrumbs:
@@ -452,10 +467,10 @@ class Builder:
 
         nav = (
             '<nav class="mainnav" aria-label="Main">'
-            '<a href="/models/">All prices</a>'
-            '<a href="/cheapest/">Cheapest</a>'
-            '<a href="/changes/">Price changes</a>'
-            '<a href="/cost-calculator/">Calculator</a>'
+            '<a href="/models.html">All prices</a>'
+            '<a href="/cheapest.html">Cheapest</a>'
+            '<a href="/changes.html">Price changes</a>'
+            '<a href="/cost-calculator.html">Calculator</a>'
             "</nav>"
         )
 
@@ -498,10 +513,10 @@ class Builder:
 <footer class="foot">
   <div class="wrap">
     <p class="foot-links">
-      <a href="/models/">All prices</a> · <a href="/cheapest/">Cheapest APIs</a> ·
-      <a href="/changes/">Price changes</a> · <a href="/cost-calculator/">Cost calculator</a> ·
-      <a href="/methodology/">Methodology</a> · <a href="/about/">About</a> ·
-      <a href="/advertise/">Advertise</a> · <a href="/privacy/">Privacy</a>
+      <a href="/models.html">All prices</a> · <a href="/cheapest.html">Cheapest APIs</a> ·
+      <a href="/changes.html">Price changes</a> · <a href="/cost-calculator.html">Cost calculator</a> ·
+      <a href="/methodology.html">Methodology</a> · <a href="/about.html">About</a> ·
+      <a href="/advertise.html">Advertise</a> · <a href="/privacy.html">Privacy</a>
     </p>
     <p class="muted">Independent tracker. Prices are collected daily from public provider pricing
     endpoints and can change without notice — always confirm on the provider's own page before you
@@ -516,21 +531,27 @@ class Builder:
 """
 
     def write(self, path: str, html_text: str, *, title: str = "", priority: str = "0.6") -> None:
-        """Write a page. `path` is a URL path like /models/ (directory-style)."""
+        """Write one page. `path` may be given directory-style; output is always flat
+        .html so it works on hosts that do not resolve directory indexes."""
         rel = path.strip("/")
-        target = self.out / rel / "index.html" if rel else self.out / "index.html"
+        if rel.endswith(".html"):
+            rel = rel[:-5]
+        if not rel:
+            target = self.out / "index.html"
+        else:
+            target = self.out / f"{rel}.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(html_text)
-        self.pages.append((self.url("/" + (rel + "/" if rel else "")), title, priority))
+        self.pages.append((self.url(page_url(path)), title, priority))
 
 
 # --------------------------------------------------------------------------- #
 # shared table renderers
 # --------------------------------------------------------------------------- #
 
-def price_cell(value) -> str:
+def price_cell(value, dynamic: bool = False) -> str:
     if value is None:
-        return '<span class="muted">—</span>'
+        return '<span class="muted">Varies</span>' if dynamic else '<span class="muted">—</span>'
     if value == 0:
         return '<span class="free">Free</span>'
     return money(value)
@@ -613,9 +634,22 @@ def change_rows(changes: list[dict], d: Dataset, limit: int | None = None) -> st
         arrow = "▼" if c["direction"] == "down" else "▲"
         cls = "down" if c["direction"] == "down" else "up"
         pct_txt = f' <span class="{cls}">{c["pct"]:+.1f}%</span>' if c.get("pct") is not None else ""
+
+        def cell(value) -> str:
+            if value is None:
+                return '<span class="muted">Varies</span>'
+            try:
+                fv = float(value)
+            except (TypeError, ValueError):
+                return '<span class="muted">—</span>'
+            if fv < 0:
+                return '<span class="muted">Varies</span>'
+            if fv == 0:
+                return '<span class="free">Free</span>'
+            return money(fv * 1_000_000)
         rows.append(
             "<tr>"
-            f'<td><a href="{esc(model_path(c["id"])) if c["id"] in d.by_id else "/retired/"}">'
+            f'<td><a href="{esc(model_path(c["id"])) if c["id"] in d.by_id else "/retired.html"}">'
             f'{esc(c.get("name") or c["id"])}</a></td>'
             f'<td>{esc(vendor_label(vendor))}</td>'
             f'<td>{esc(field_labels.get(c["field"], c["field"]))}</td>'
@@ -670,8 +704,8 @@ def build_home(b: Builder) -> None:
         "<h1>LLM API pricing, tracked daily</h1>",
         f'<p class="lede">Every model price on one page, refreshed every day at 06:17 UTC. '
         f'Today: <strong>{esc(headline)}</strong>.</p>',
-        '<p class="hero-cta"><a class="btn" href="/models/">See all prices</a> '
-        '<a class="btn ghost" href="/cost-calculator/">Calculate your bill</a></p>',
+        '<p class="hero-cta"><a class="btn" href="/models.html">See all prices</a> '
+        '<a class="btn ghost" href="/cost-calculator.html">Calculate your bill</a></p>',
         "</section>",
         b.ad_slot("top", "Advertisement"),
     ]
@@ -683,7 +717,7 @@ def build_home(b: Builder) -> None:
            '<p class="muted">No price moves in the last update. The tracker keeps a permanent daily '
            'snapshot of all '
            f'{d.latest["count"]} endpoints, so every future change is caught automatically.</p>')
-        + '<p><a href="/changes/">Full change log →</a></p></div>'
+        + '<p><a href="/changes.html">Full change log →</a></p></div>'
     )
     movers = []
     for c in (drops + hikes)[:6]:
@@ -696,7 +730,7 @@ def build_home(b: Builder) -> None:
         "appear and retired models vanish. A price sheet you copied last quarter is usually wrong by "
         "10–40%. This tracker rebuilds the whole table every day and keeps the diff.</p>"
         + (f'<ul class="plain">{"".join(movers)}</ul>' if movers else "")
-        + '<p><a href="/methodology/">How the data is collected →</a></p></div>'
+        + '<p><a href="/methodology.html">How the data is collected →</a></p></div>'
     )
     body.append("</section>")
 
@@ -704,7 +738,7 @@ def build_home(b: Builder) -> None:
     body.append('<section class="card"><h2>Cheapest LLM APIs right now</h2>'
                 '<p class="sub">Blended price assumes 3 input tokens per 1 output token — the mix most '
                 'chat and RAG workloads actually run at.</p>'
-                + model_table(cheapest, d) + '<p><a href="/cheapest/cheapest-llm-api/">Full ranking →</a></p></section>')
+                + model_table(cheapest, d) + '<p><a href="/cheapest/cheapest-llm-api.html">Full ranking →</a></p></section>')
 
     body.append('<section class="grid-2">')
     body.append('<div class="card"><h2>Best value: quality per dollar</h2>'
@@ -716,16 +750,16 @@ def build_home(b: Builder) -> None:
 
     body.append('<section class="grid-2">')
     body.append('<div class="card"><h2>Free API models</h2>'
-                + model_table(free, d) + '<p><a href="/cheapest/free-llm-apis/">All free models →</a></p></div>')
+                + model_table(free, d) + '<p><a href="/cheapest/free-llm-apis.html">All free models →</a></p></div>')
     body.append('<div class="card"><h2>Newest models on the market</h2>'
-                + model_table(newest, d) + '<p><a href="/changes/">Release history →</a></p></div>')
+                + model_table(newest, d) + '<p><a href="/changes.html">Release history →</a></p></div>')
     body.append("</section>")
 
     body.append('<section class="card"><h2>Pick by workload</h2><ul class="linkgrid">')
     for uc in USE_CASES:
-        body.append(f'<li><a href="/cheapest/{uc["slug"]}/">{esc(uc["title"])}</a>'
+        body.append(f'<li><a href="/cheapest/{uc["slug"]}.html">{esc(uc["title"])}</a>'
                     f'<span>{esc(uc["blurb"])}</span></li>')
-    body.append('<li><a href="/models/">All models</a><span>Complete pricing table, sortable in your browser.</span></li>')
+    body.append('<li><a href="/models.html">All models</a><span>Complete pricing table, sortable in your browser.</span></li>')
     body.append("</ul></section>")
 
     body.append(b.newsletter_form())
@@ -737,7 +771,7 @@ def build_home(b: Builder) -> None:
         "description": f"Daily snapshot of {d.latest['count']} LLM API endpoints with per-token pricing, context windows and benchmark indices.",
         "dateModified": d.date,
         "creator": {"@type": "Organization", "name": b.site},
-        "license": b.url("/methodology/"),
+        "license": b.url("/methodology.html"),
     }]
     html_text = b.shell(
         path="/", title=f"LLM API Pricing Tracker — updated daily ({short_date(d.date)})",
@@ -931,7 +965,7 @@ def build_use_cases(b: Builder) -> None:
         ]
         if len(pool) > 40:
             body.append(f'<p class="muted">Showing the 40 cheapest of {len(pool)} qualifying models. '
-                        '<a href="/models/">Open the full table</a>.</p>')
+                        '<a href="/models.html">Open the full table</a>.</p>')
         # extra explainer content, unique per page
         best = pool[0] if pool else None
         if best:
@@ -955,10 +989,10 @@ def build_use_cases(b: Builder) -> None:
                 "<li><strong>Benchmark indices</strong> come from the provider's published model metadata "
                 "and are absolute published scores, not an endorsement.</li>"
                 "<li><strong>Caching</strong> can cut repeat-context costs by 60–90% — see "
-                '<a href="/cheapest/cheapest-prompt-caching/">cache pricing</a>.</li></ol>'
+                '<a href="/cheapest/cheapest-prompt-caching.html">cache pricing</a>.</li></ol>'
             )
             body.append(
-                '<p><a class="btn ghost" href="/cost-calculator/">Run your own numbers →</a></p>'
+                '<p><a class="btn ghost" href="/cost-calculator.html">Run your own numbers →</a></p>'
             )
             body.append("</section>")
         body.append(b.ad_slot("inline", "Advertisement"))
@@ -966,7 +1000,7 @@ def build_use_cases(b: Builder) -> None:
         for other in USE_CASES:
             if other["slug"] == uc["slug"]:
                 continue
-            body.append(f'<li><a href="/cheapest/{other["slug"]}/">{esc(other["title"])}</a>'
+            body.append(f'<li><a href="/cheapest/{other["slug"]}.html">{esc(other["title"])}</a>'
                         f'<span>{esc(other["blurb"])}</span></li>')
         body.append("</ul></section>")
         body.append(b.newsletter_form())
@@ -984,14 +1018,14 @@ def build_use_cases(b: Builder) -> None:
         }]
         title = f"{uc['title']} — ranked by price ({short_date(d.date)})"
         html_text = b.shell(
-            path=f"/cheapest/{uc['slug']}/", title=title,
+            path=f"/cheapest/{uc['slug']}.html", title=title,
             description=f"{uc['blurb']} {len(pool)} qualifying models, ranked, with cost per 1M tokens. "
                         f"Updated {d.date}.",
             body="\n".join(body),
-            breadcrumbs=[("Home", "/"), ("Cheapest", "/cheapest/"), (uc["title"], f"/cheapest/{uc['slug']}/")],
+            breadcrumbs=[("Home", "/"), ("Cheapest", "/cheapest.html"), (uc["title"], f"/cheapest/{uc['slug']}/")],
             jsonld=jsonld,
         )
-        b.write(f"/cheapest/{uc['slug']}/", html_text, title=uc["title"], priority="0.9")
+        b.write(f"/cheapest/{uc['slug']}.html", html_text, title=uc["title"], priority="0.9")
         index_items.append((uc, pool))
 
     body = ["<h1>Cheapest LLM APIs by workload</h1>",
@@ -1001,7 +1035,7 @@ def build_use_cases(b: Builder) -> None:
     for uc, pool in index_items:
         bestm = pool[0] if pool else None
         body.append(
-            f'<li><a href="/cheapest/{uc["slug"]}/">{esc(uc["title"])}</a>'
+            f'<li><a href="/cheapest/{uc["slug"]}.html">{esc(uc["title"])}</a>'
             f'<span>{esc(uc["blurb"])} · {len(pool)} models'
             + (f' — cheapest: {esc(bestm["dn"])} at {money(bestm["blend"])}/1M' if bestm and bestm.get("blend") else "")
             + "</span></li>"
@@ -1009,12 +1043,12 @@ def build_use_cases(b: Builder) -> None:
     body.append("</ul>")
     body.append(b.newsletter_form())
     html_text = b.shell(
-        path="/cheapest/", title="Cheapest LLM APIs by workload — daily rankings",
+        path="/cheapest.html", title="Cheapest LLM APIs by workload — daily rankings",
         description="Cheapest LLM API for coding, agents, long context, vision, reasoning, batch and "
                     "high-volume output. Ranked daily from live provider pricing.",
-        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Cheapest", "/cheapest/")],
+        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Cheapest", "/cheapest.html")],
     )
-    b.write("/cheapest/", html_text, title="Cheapest APIs", priority="0.9")
+    b.write("/cheapest.html", html_text, title="Cheapest APIs", priority="0.9")
 
 
 def build_models_table(b: Builder) -> None:
@@ -1025,7 +1059,7 @@ def build_models_table(b: Builder) -> None:
             "i": m["id"], "n": m["name"], "v": m["vendor"], "u": m["path"],
             "a": m.get("in1m"), "o": m.get("out1m"), "b": round(m["blend"], 4) if m.get("blend") is not None else None,
             "c": m.get("ctx"), "q": m.get("iq"), "r": 1 if m.get("reasoning") else 0,
-            "x": ",".join(m.get("in_mod") or []),
+            "x": ",".join(m.get("in_mod") or []), "d": 1 if m.get("dynamic") else 0,
         }
         for m in rows
     ]
@@ -1055,17 +1089,17 @@ def build_models_table(b: Builder) -> None:
         b.newsletter_form(),
     ]
     html_text = b.shell(
-        path="/models/", title=f"All LLM API prices — {len(d.bases)} models compared ({short_date(d.date)})",
+        path="/models.html", title=f"All LLM API prices — {len(d.bases)} models compared ({short_date(d.date)})",
         description=f"Complete, sortable table of {len(d.models)} LLM API endpoints and their input, "
                     f"output and blended price per 1M tokens. Updated daily.",
         body="\n".join(body),
-        breadcrumbs=[("Home", "/"), ("All prices", "/models/")],
+        breadcrumbs=[("Home", "/"), ("All prices", "/models.html")],
     )
     html_text = html_text.replace(
         "</body>",
         f'<script id="models-data" type="application/json">{json.dumps(payload, separators=(",", ":"))}</script>\n</body>',
     )
-    b.write("/models/", html_text, title="All prices", priority="1.0")
+    b.write("/models.html", html_text, title="All prices", priority="1.0")
 
 
 def build_model_pages(b: Builder) -> None:
@@ -1089,11 +1123,12 @@ def build_model_pages(b: Builder) -> None:
             "</header>",
         ]
         body.append('<section class="stats">')
+        dyn = bool(canon.get("dynamic"))
         stats = [
-            ("Input / 1M", price_cell(canon.get("in1m"))),
-            ("Output / 1M", price_cell(canon.get("out1m"))),
-            ("Blended / 1M", price_cell(canon.get("blend"))),
-            ("Cache read / 1M", price_cell(canon.get("cache1m"))),
+            ("Input / 1M", price_cell(canon.get("in1m"), dyn)),
+            ("Output / 1M", price_cell(canon.get("out1m"), dyn)),
+            ("Blended / 1M", price_cell(canon.get("blend"), dyn)),
+            ("Cache read / 1M", price_cell(canon.get("cache1m"), dyn)),
             ("Context", esc(int_fmt(canon.get("ctx")))),
             ("Max output", esc(int_fmt(canon.get("max_out")))),
             ("Intelligence", str(canon["iq"]) if canon.get("iq") else "—"),
@@ -1124,6 +1159,11 @@ def build_model_pages(b: Builder) -> None:
                             f"<td class=\"num\">{money(oc)}</td>"
                             f"<td class=\"num strong\">{money(ic + oc)}</td></tr>")
             body.append("</tbody></table></div>")
+        elif dyn:
+            body.append('<p class="muted">This endpoint is a <strong>router</strong>: the provider does not '
+                        'publish a fixed per-token price because the cost depends on which underlying '
+                        'model the request is routed to. Compare the candidate models below, or check the '
+                        'provider page for routing rules.</p>')
         else:
             body.append('<p class="muted">Pricing is not published in a comparable unit for this model. '
                         'Check the provider page.</p>')
@@ -1228,7 +1268,7 @@ def build_model_pages(b: Builder) -> None:
                     '— the tracker reads the same public catalogue, so what you see here is what the '
                     'router charges.</p>'
                     f'<p class="muted">{esc(vendor_label(vendor))} provider page: '
-                    f'<a rel="noopener" href="/provider/{esc(canon["vk"])}/">{esc(vendor_label(vendor))} '
+                    f'<a rel="noopener" href="/provider/{esc(canon["vk"])}.html">{esc(vendor_label(vendor))} '
                     "models on TokenPrice Watch</a>.</p></section>")
         body.append(b.newsletter_form())
 
@@ -1274,8 +1314,8 @@ def build_model_pages(b: Builder) -> None:
                         f"{int_fmt(canon.get('ctx'))} context. Rankings, variants, cheaper alternatives. "
                         f"Updated {d.date}.",
             body="\n".join(body),
-            breadcrumbs=[("Home", "/"), ("All prices", "/models/"),
-                         (vendor_label(vendor), f'/provider/{canon["vk"]}/'), (canon["dn"], path)],
+            breadcrumbs=[("Home", "/"), ("All prices", "/models.html"),
+                         (vendor_label(vendor), f'/provider/{canon["vk"]}.html'), (canon["dn"], path)],
             jsonld=jsonld,
         )
         b.write(path, html_text, title=f'{canon["name"]} pricing', priority="0.7")
@@ -1321,22 +1361,22 @@ def build_vendor_pages(b: Builder) -> None:
                     "higher tier above 128K–200K tokens, and cached input is billed separately — a cheap "
                     "headline rate with no cache tier can end up costing more than a pricier model with "
                     "large cache discounts.</p>"
-                    '<p><a href="/methodology/">Read the methodology</a> or '
-                    '<a href="/cost-calculator/">model your own volume</a>.</p></section>')
+                    '<p><a href="/methodology.html">Read the methodology</a> or '
+                    '<a href="/cost-calculator.html">model your own volume</a>.</p></section>')
         body.append('<section class="card"><h2>Other providers</h2><ul class="linkgrid">')
         for other, ogroup in sorted(d.vendors.items()):
             if other == vk:
                 continue
             ob = [m for m in d.base_models if m["vk"] == other]
             op = min([m["blend"] for m in ob if m.get("blend") and m["blend"] > 0], default=None)
-            body.append(f'<li><a href="/provider/{esc(other)}/">{esc(vendor_label(ogroup[0]["vendor"]))}</a>'
+            body.append(f'<li><a href="/provider/{esc(other)}.html">{esc(vendor_label(ogroup[0]["vendor"]))}</a>'
                         f'<span>{len(ob)} models'
                         + (f' · from {money(op)}/1M' if op else "") + "</span></li>")
         body.append("</ul></section>")
         body.append(b.ad_slot("inline", "Advertisement"))
         body.append(b.newsletter_form())
 
-        path = f"/provider/{vk}/"
+        path = f"/provider/{vk}.html"
         jsonld = [{
             "@context": "https://schema.org",
             "@type": "CollectionPage",
@@ -1348,7 +1388,7 @@ def build_vendor_pages(b: Builder) -> None:
             description=f"Every {label} model with input, output and blended price per 1M tokens, "
                         f"cheapest first. Updated daily.",
             body="\n".join(body),
-            breadcrumbs=[("Home", "/"), ("All prices", "/models/"), (label, path)],
+            breadcrumbs=[("Home", "/"), ("All prices", "/models.html"), (label, path)],
             jsonld=jsonld,
         )
         b.write(path, html_text, title=f"{label} pricing", priority="0.6")
@@ -1374,7 +1414,7 @@ def build_changes(b: Builder) -> None:
     if ch.get("added") or ch.get("removed"):
         body.append('<section class="grid-2">')
         def _entry(c: dict) -> str:
-            href = model_path(c["id"]) if c["id"] in d.by_id else "/retired/"
+            href = model_path(c["id"]) if c["id"] in d.by_id else "/retired.html"
             return (f'<li><a href="{esc(href)}">{esc(c["name"])}</a>'
                     f' <code>{esc(c["id"])}</code></li>')
 
@@ -1393,19 +1433,19 @@ def build_changes(b: Builder) -> None:
     for date in days:
         c = d.change_days[date].get("counts", {})
         moves = c.get("price_changes", 0)
-        body.append(f'<li><a href="/changes/{esc(date)}/">{esc(date)}</a>'
+        body.append(f'<li><a href="/changes/{esc(date)}.html">{esc(date)}</a>'
                     f'<span>{moves} price move{"s" if moves != 1 else ""} · '
                     f'{c.get("added", 0)} added · {c.get("removed", 0)} retired</span></li>')
     body.append("</ul></section>")
     body.append(b.newsletter_form())
 
     html_text = b.shell(
-        path="/changes/", title="LLM API price changes — daily diff log",
+        path="/changes.html", title="LLM API price changes — daily diff log",
         description="Every LLM API price move, addition and retirement, recorded daily. Includes "
                     "per-cent changes and the full archive.",
-        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Price changes", "/changes/")],
+        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Price changes", "/changes.html")],
     )
-    b.write("/changes/", html_text, title="Price changes", priority="0.9")
+    b.write("/changes.html", html_text, title="Price changes", priority="0.9")
 
     for date in days:
         day = d.change_days[date]
@@ -1430,29 +1470,30 @@ def build_changes(b: Builder) -> None:
                         + "".join(f'<li>{esc(x["name"])}</li>' for x in day["removed"]) + "</ul></section>")
         nav = []
         if newer:
-            nav.append(f'<a href="/changes/{esc(newer)}/">← Newer ({esc(newer)})</a>')
+            nav.append(f'<a href="/changes/{esc(newer)}.html">← Newer ({esc(newer)})</a>')
         if older:
-            nav.append(f'<a href="/changes/{esc(older)}/">Older ({esc(older)}) →</a>')
+            nav.append(f'<a href="/changes/{esc(older)}.html">Older ({esc(older)}) →</a>')
         if nav:
             body.append('<p class="daynav">' + " · ".join(nav) + "</p>")
-        body.append('<p><a href="/changes/">All change logs →</a></p>')
+        body.append('<p><a href="/changes.html">All change logs →</a></p>')
         html_text = b.shell(
-            path=f"/changes/{date}/",
+            path=f"/changes/{date}.html",
             title=f"LLM API price changes on {date} — {c.get('price_changes', 0)} moves",
             description=f"Price moves recorded on {date}: {c.get('drops', 0)} cuts, {c.get('hikes', 0)} "
                         f"increases, {c.get('added', 0)} new endpoints.",
             body="\n".join(body),
-            breadcrumbs=[("Home", "/"), ("Price changes", "/changes/"), (date, f"/changes/{date}/")],
-            canonical_path=f"/changes/{date}/",
+            breadcrumbs=[("Home", "/"), ("Price changes", "/changes.html"), (date, f"/changes/{date}.html")],
+            canonical_path=f"/changes/{date}.html",
         )
-        b.write(f"/changes/{date}/", html_text, title=f"Changes {date}", priority="0.4")
+        b.write(f"/changes/{date}.html", html_text, title=f"Changes {date}", priority="0.4")
 
 
 def build_calculator(b: Builder) -> None:
     d = b.d
     payload = [
         {"i": m["id"], "n": m["name"], "v": m["vendor"], "a": m.get("in1m"), "o": m.get("out1m"),
-         "c": m.get("cache1m"), "x": m.get("ctx"), "q": m.get("iq")}
+         "c": m.get("cache1m"), "x": m.get("ctx"), "q": m.get("iq"),
+         "d": 1 if m.get("dynamic") else 0}
         for m in sorted(d.base_models, key=lambda m: (m.get("blend") is None, m.get("blend") or 0))
     ]
     body = [
@@ -1485,30 +1526,30 @@ def build_calculator(b: Builder) -> None:
         "<li><strong>Cap output tokens.</strong> Output is usually 3–5× the input price per token, and "
         "verbose answers are pure cost.</li>"
         "<li><strong>Use batch endpoints</strong> for anything that is not interactive — see "
-        '<a href="/cheapest/cheapest-batch-api/">batch pricing</a>.</li>'
+        '<a href="/cheapest/cheapest-batch-api.html">batch pricing</a>.</li>'
         "<li><strong>Re-check the table monthly.</strong> Prices fall; a model that was wrong for your "
         "budget last quarter is often the right answer now — that is why this tracker updates daily.</li>"
         "</ol></section>",
         b.newsletter_form(),
     ]
     html_text = b.shell(
-        path="/cost-calculator/", title="LLM API cost calculator — what your workload would cost today",
+        path="/cost-calculator.html", title="LLM API cost calculator — what your workload would cost today",
         description="Free LLM API cost calculator: enter calls per day and token sizes to see the monthly "
                     "bill for every tracked model, ranked cheapest first.",
         body="\n".join(body),
-        breadcrumbs=[("Home", "/"), ("Cost calculator", "/cost-calculator/")],
+        breadcrumbs=[("Home", "/"), ("Cost calculator", "/cost-calculator.html")],
     )
     html_text = html_text.replace(
         "</body>",
         f'<script id="models-data" type="application/json">{json.dumps(payload, separators=(",", ":"))}</script>\n</body>',
     )
-    b.write("/cost-calculator/", html_text, title="Cost calculator", priority="0.9")
+    b.write("/cost-calculator.html", html_text, title="Cost calculator", priority="0.9")
 
 
 def build_static_pages(b: Builder) -> None:
     d = b.d
     pages = [
-        ("/about/", "About TokenPrice Watch", "Who runs this tracker, why it exists, and what it is not.", [
+        ("/about.html", "About TokenPrice Watch", "Who runs this tracker, why it exists, and what it is not.", [
             f"<h1>About {esc(b.site)}</h1>",
             '<p class="lede">A one-page answer to a question every engineering team asks: what do LLM '
             "APIs actually cost today?</p>",
@@ -1532,8 +1573,8 @@ def build_static_pages(b: Builder) -> None:
             f'the next daily run will fix it. To flag something urgent, email '
             f'<a href="mailto:{esc(b.cfg.get("contact_email",""))}">{esc(b.cfg.get("contact_email",""))}</a>.</p>'
             "</section>",
-        ], "/about/"),
-        ("/methodology/", "Methodology — how the price data is collected", "Data source, refresh schedule, pricing units, benchmark provenance and the limits of this dataset.", [
+        ], "/about.html"),
+        ("/methodology.html", "Methodology — how the price data is collected", "Data source, refresh schedule, pricing units, benchmark provenance and the limits of this dataset.", [
             "<h1>Methodology</h1>",
             '<p class="lede">Everything on this site is derived from one public data source, refreshed '
             "once a day, and committed to a public repository. Here is exactly how.</p>",
@@ -1568,8 +1609,8 @@ def build_static_pages(b: Builder) -> None:
             "<p>The generator is a small Python program with no third-party dependencies. Anyone can "
             "clone the repository, run two commands, and rebuild this site from the committed snapshots.</p>"
             "</section>",
-        ], "/methodology/"),
-        ("/advertise/", "Advertise — reach developers choosing an inference provider", "Sponsorship placements, audience profile and how to get in front of engineers comparing LLM API costs.", [
+        ], "/methodology.html"),
+        ("/advertise.html", "Advertise — reach developers choosing an inference provider", "Sponsorship placements, audience profile and how to get in front of engineers comparing LLM API costs.", [
             "<h1>Advertise on " + esc(b.site) + "</h1>",
             '<p class="lede">A small, high-intent audience: engineers and founders deciding which '
             "inference provider to build on.</p>",
@@ -1590,8 +1631,8 @@ def build_static_pages(b: Builder) -> None:
             f'<h2>Get in touch</h2><p>Email <a href="mailto:{esc(b.cfg.get("contact_email",""))}">'
             f'{esc(b.cfg.get("contact_email",""))}</a> with the provider or product you want to place, '
             "the pages you care about, and the period.</p></section>",
-        ], "/advertise/"),
-        ("/privacy/", "Privacy policy", "What this site collects, which third parties are involved, and how to opt out.", [
+        ], "/advertise.html"),
+        ("/privacy.html", "Privacy policy", "What this site collects, which third parties are involved, and how to opt out.", [
             "<h1>Privacy policy</h1>",
             '<section class="card prose">'
             "<p>This site is a static website. It has no accounts, no login, and no user-submitted "
@@ -1613,8 +1654,8 @@ def build_static_pages(b: Builder) -> None:
             f'<h2>Contact</h2><p>Requests about this policy: '
             f'<a href="mailto:{esc(b.cfg.get("contact_email",""))}">{esc(b.cfg.get("contact_email",""))}</a>.</p>'
             "</section>",
-        ], "/privacy/"),
-        ("/terms/", "Terms of use", "The basis on which this pricing data is provided.", [
+        ], "/privacy.html"),
+        ("/terms.html", "Terms of use", "The basis on which this pricing data is provided.", [
             "<h1>Terms of use</h1>",
             '<section class="card prose">'
             "<p>The pricing data and rankings on this site are provided for information only, without "
@@ -1627,7 +1668,7 @@ def build_static_pages(b: Builder) -> None:
             "<h2>Trademarks</h2><p>Model and provider names are trademarks of their owners and are used "
             "here for identification only. This site is not affiliated with or endorsed by any of them.</p>"
             "</section>",
-        ], "/terms/"),
+        ], "/terms.html"),
     ]
     for path, title, desc, chunks, canonical in pages:
         body = "\n".join(chunks) + "\n" + b.ad_slot("inline", "Advertisement") + "\n" + b.newsletter_form()
@@ -1643,9 +1684,9 @@ def build_static_pages(b: Builder) -> None:
         title="Page not found — TokenPrice Watch",
         description="That page does not exist. Jump to the full LLM API price table, the cheapest API "
                     "rankings, or the cost calculator to find current model pricing.",
-        body='<h1>Page not found</h1><p class="lede">Try the <a href="/models/">full price table</a>, '
-             'the <a href="/cheapest/">cheapest API rankings</a>, or the '
-             '<a href="/cost-calculator/">cost calculator</a>.</p>',
+        body='<h1>Page not found</h1><p class="lede">Try the <a href="/models.html">full price table</a>, '
+             'the <a href="/cheapest.html">cheapest API rankings</a>, or the '
+             '<a href="/cost-calculator.html">cost calculator</a>.</p>',
     )
     (b.out / "404.html").write_text(notfound)
     b.pages.append((b.url("/404.html"), "404", "0.1"))
@@ -1695,16 +1736,16 @@ def build_retired(b: Builder) -> None:
                 "<p>Providers delist endpoints for three common reasons: a dated snapshot is superseded by "
                 "a newer one, a preview model is withdrawn, or a free tier is closed after an abuse wave. "
                 "If you depended on a retired model, the cheapest replacements are ranked on the "
-                '<a href="/cheapest/">cheapest API pages</a>, and every removal is dated in the '
-                '<a href="/changes/">daily change log</a>.</p></section>')
+                '<a href="/cheapest.html">cheapest API pages</a>, and every removal is dated in the '
+                '<a href="/changes.html">daily change log</a>.</p></section>')
     body.append(b.newsletter_form())
     html_text = b.shell(
-        path="/retired/", title=f"Retired LLM API models ({len(arch)} archived) — last known prices",
+        path="/retired.html", title=f"Retired LLM API models ({len(arch)} archived) — last known prices",
         description="Delisted and retired LLM API endpoints with their last observed prices, context "
                     "windows and delisting dates. Archived automatically by the daily tracker.",
-        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Retired models", "/retired/")],
+        body="\n".join(body), breadcrumbs=[("Home", "/"), ("Retired models", "/retired.html")],
     )
-    b.write("/retired/", html_text, title="Retired models", priority="0.5")
+    b.write("/retired.html", html_text, title="Retired models", priority="0.5")
 
 
 def build_feeds(b: Builder) -> None:
@@ -1743,8 +1784,8 @@ def build_feeds(b: Builder) -> None:
         entries.append(
             "<item>"
             f"<title>LLM API price changes — {date}</title>"
-            f"<link>{esc(b.url('/changes/' + date + '/'))}</link>"
-            f"<guid isPermaLink=\"true\">{esc(b.url('/changes/' + date + '/'))}</guid>"
+            f"<link>{esc(b.url('/changes/' + date + '.html'))}</link>"
+            f"<guid isPermaLink=\"true\">{esc(b.url('/changes/' + date + '.html'))}</guid>"
             f"<pubDate>{dt.datetime.strptime(date, '%Y-%m-%d').strftime('%a, %d %b %Y 06:30:00 +0000')}</pubDate>"
             f"<description>{esc(desc)}</description>"
             "</item>"

@@ -9,8 +9,23 @@
     try { data = JSON.parse(raw.textContent); } catch (e) { data = null; }
   }
 
-  function fmtUSD(v, allowZero) {
-    if (v === null || v === undefined || isNaN(v)) return "—";
+  var VENDOR_NAMES = {
+    openai: "OpenAI", anthropic: "Anthropic", google: "Google", meta: "Meta",
+    "meta-llama": "Meta Llama", mistralai: "Mistral AI", qwen: "Alibaba Qwen",
+    deepseek: "DeepSeek", "x-ai": "xAI", "z-ai": "Z.ai", moonshotai: "Moonshot AI",
+    minimax: "MiniMax", nvidia: "NVIDIA", cohere: "Cohere", amazon: "Amazon",
+    microsoft: "Microsoft", perplexity: "Perplexity", openrouter: "OpenRouter"
+  };
+  function vendorLabel(v) {
+    if (!v) return "";
+    var alias = String(v).charAt(0) === "~";
+    var key = alias ? String(v).slice(1) : String(v);
+    var name = VENDOR_NAMES[key] || key.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+    return alias ? name + " (latest alias)" : name;
+  }
+  function fmtUSD(v, allowZero, dynamic) {
+    if (v === null || v === undefined || isNaN(v)) return dynamic ? "Varies" : "—";
+    if (v < 0) return dynamic ? "Varies" : "—";
     if (v === 0) return allowZero ? "Free" : "$0";
     if (v < 0.01) return "$" + v.toFixed(4);
     if (v < 1) return "$" + v.toFixed(3);
@@ -78,10 +93,10 @@
         if (m.c >= 1000000) badges += '<span class="badge">1M ctx</span>';
         html += "<tr>" +
           '<td><a href="' + modelUrl(m) + '">' + esc(m.n) + "</a>" + badges + "</td>" +
-          "<td>" + esc(m.v) + "</td>" +
-          '<td class="num">' + fmtUSD(m.a, true) + "</td>" +
-          '<td class="num">' + fmtUSD(m.o, true) + "</td>" +
-          '<td class="num strong">' + fmtUSD(m.b, true) + "</td>" +
+          "<td>" + esc(vendorLabel(m.v)) + "</td>" +
+          '<td class="num">' + fmtUSD(m.a, true, m.d) + "</td>" +
+          '<td class="num">' + fmtUSD(m.o, true, m.d) + "</td>" +
+          '<td class="num strong">' + fmtUSD(m.b, true, m.d) + "</td>" +
           '<td class="num">' + fmtCtx(m.c) + "</td>" +
           '<td class="num">' + (m.q || "—") + "</td>" +
           "</tr>";
@@ -129,8 +144,8 @@
       var inTok = calls * tin * days;
       var outTok = calls * tout * days;
       var rows = data.map(function (m) {
-        var a = m.a === null || m.a === undefined ? null : m.a;
-        var o = m.o === null || m.o === undefined ? null : m.o;
+        var a = m.a === null || m.a === undefined || m.a < 0 ? null : m.a;
+        var o = m.o === null || m.o === undefined || m.o < 0 ? null : m.o;
         if (a === null || o === null) return { m: m, cost: null };
         var cacheRate = (m.c === null || m.c === undefined) ? a : m.c;
         var cost = (inTok * (1 - cachePct) * a + inTok * cachePct * cacheRate + outTok * o) / 1e6;
@@ -145,16 +160,16 @@
         html += "<tr>" +
           '<td class="num rank">' + (i + 1) + "</td>" +
           '<td><a href="' + modelUrl(m) + '">' + esc(m.n) + "</a></td>" +
-          "<td>" + esc(m.v) + "</td>" +
-          '<td class="num">' + fmtUSD(m.a, true) + "</td>" +
-          '<td class="num">' + fmtUSD(m.o, true) + "</td>" +
+          "<td>" + esc(vendorLabel(m.v)) + "</td>" +
+          '<td class="num">' + fmtUSD(m.a, true, m.d) + "</td>" +
+          '<td class="num">' + fmtUSD(m.o, true, m.d) + "</td>" +
           '<td class="num strong">' + fmtUSD(r.cost) + "</td>" +
           '<td class="num">' + (m.q || "—") + "</td>" +
           "</tr>";
       }
       calcRows.innerHTML = html || '<tr><td colspan="7" class="muted">Enter a volume above to see costs.</td></tr>';
 
-      var cheapest = rows[0];
+      var cheapest = rows[0] || null;
       var median = rows.length ? rows[Math.floor(rows.length / 2)] : null;
       var dearest = rows.length ? rows[rows.length - 1] : null;
       var monthlyTokens = inTok + outTok;

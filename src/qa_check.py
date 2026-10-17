@@ -160,6 +160,19 @@ def check_site(out: pathlib.Path, prefix: str = "") -> int:
     else:
         problems.append("sitemap.xml missing")
 
+    # data guard: upstream has used negative sentinels for router endpoints before
+    data_file = out.parent / "data" / "latest.json"
+    if data_file.exists():
+        latest = json.loads(data_file.read_text())
+        for m in latest.get("models", []):
+            for field in ("pin", "pout", "pcr", "pcw", "pimg", "paudio"):
+                v = m.get(field)
+                try:
+                    if v is not None and float(v) < 0:
+                        problems.append(f"negative price in data: {m['id']}.{field}={v}")
+                except (TypeError, ValueError):
+                    problems.append(f"non-numeric price in data: {m['id']}.{field}={v}")
+
     for f in ("robots.txt", ".well-known/feed.xml"):
         if not (out / f).exists():
             problems.append(f"missing required file: {f}")

@@ -42,16 +42,33 @@ def fetch_models(url: str = API_URL, timeout: int = 60) -> dict:
 
 
 def num(value) -> str | None:
-    """Normalise a source price string into a compact, deterministic string."""
+    """Normalise a source price string into a compact, deterministic string.
+
+    Negative prices are a sentinel used by router endpoints ("the price depends
+    on whichever model gets routed to"), not a real price. They are stored as
+    absent, and the endpoint is flagged dynamically priced instead.
+    """
     if value is None or value == "":
         return None
     try:
         f = float(value)
     except (TypeError, ValueError):
         return None
+    if f < 0:
+        return None
     if f == 0:
         return "0"
     return f"{f:.10g}"
+
+
+def is_dynamic_price(pricing: dict) -> bool:
+    for key in ("prompt", "completion"):
+        try:
+            if float(pricing.get(key)) < 0:
+                return True
+        except (TypeError, ValueError):
+            continue
+    return False
 
 
 def first(*values):
@@ -104,6 +121,7 @@ def normalize(payload: dict) -> list[dict]:
                 "ci": aa.get("coding_index"),
                 "agi": aa.get("agentic_index"),
                 "reasoning": bool(raw.get("reasoning")),
+                "dynamic": is_dynamic_price(pricing),
                 "knowledge_cutoff": raw.get("knowledge_cutoff"),
                 "hf": raw.get("hugging_face_id"),
                 "endpoints": (raw.get("links") or {}).get("details"),
