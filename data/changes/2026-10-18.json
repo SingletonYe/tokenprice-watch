@@ -13,8 +13,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash 0731",
    "field": "pin",
    "from": "1.8e-08",
-   "to": "1.51e-08",
-   "pct": -16.1,
+   "to": "1.14e-08",
+   "pct": -36.7,
    "direction": "down"
   },
   {
@@ -31,8 +31,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash 0731",
    "field": "pcr",
    "from": "1.8e-08",
-   "to": "1.51e-08",
-   "pct": -16.1,
+   "to": "1.14e-08",
+   "pct": -36.7,
    "direction": "down"
   },
   {
@@ -40,8 +40,8 @@
    "name": "DeepSeek: DeepSeek V4.1 Flash",
    "field": "pin",
    "from": "1.5e-07",
-   "to": "6.48e-08",
-   "pct": -56.8,
+   "to": "4e-08",
+   "pct": -73.3,
    "direction": "down"
   },
   {
@@ -108,66 +108,12 @@
    "direction": "down"
   },
   {
-   "id": "tencent/hy3",
-   "name": "Tencent: Hy3",
-   "field": "pin",
-   "from": "8.25e-08",
-   "to": "1.32e-07",
-   "pct": 60.0,
-   "direction": "up"
-  },
-  {
-   "id": "tencent/hy3",
-   "name": "Tencent: Hy3",
-   "field": "pout",
-   "from": "3.3e-07",
-   "to": "5.28e-07",
-   "pct": 60.0,
-   "direction": "up"
-  },
-  {
-   "id": "tencent/hy3",
-   "name": "Tencent: Hy3",
-   "field": "pcr",
-   "from": "2.0625e-08",
-   "to": "3.3e-08",
-   "pct": 60.0,
-   "direction": "up"
-  },
-  {
-   "id": "tencent/hy4-preview",
-   "name": "Tencent: Hy4 preview",
-   "field": "pin",
-   "from": "7.506e-07",
-   "to": "8.34e-07",
-   "pct": 11.1,
-   "direction": "up"
-  },
-  {
-   "id": "tencent/hy4-preview",
-   "name": "Tencent: Hy4 preview",
-   "field": "pout",
-   "from": "2.2509e-06",
-   "to": "2.501e-06",
-   "pct": 11.1,
-   "direction": "up"
-  },
-  {
-   "id": "tencent/hy4-preview",
-   "name": "Tencent: Hy4 preview",
-   "field": "pcr",
-   "from": "3.78e-08",
-   "to": "4.2e-08",
-   "pct": 11.1,
-   "direction": "up"
-  },
-  {
    "id": "z-ai/glm-5.3",
    "name": "Z.ai: GLM 5.3",
    "field": "pout",
    "from": "4.8e-06",
-   "to": "2.5e-06",
-   "pct": -47.9,
+   "to": "1.8e-06",
+   "pct": -62.5,
    "direction": "down"
   },
   {
@@ -220,8 +166,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pin",
    "from": "1.8e-08",
-   "to": "1.208e-08",
-   "pct": -32.9,
+   "to": "1.14e-08",
+   "pct": -36.7,
    "direction": "down"
   },
   {
@@ -229,8 +175,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pout",
    "from": "1.28e-06",
-   "to": "1.43616e-07",
-   "pct": -88.8,
+   "to": "4.5e-07",
+   "pct": -64.8,
    "direction": "down"
   },
   {
@@ -238,8 +184,35 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pcr",
    "from": "1.8e-08",
-   "to": "1.523e-09",
-   "pct": -91.5,
+   "to": "1.14e-08",
+   "pct": -36.7,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "2.7e-07",
+   "to": "2.5e-07",
+   "pct": -7.4,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "1.4e-05",
+   "to": "8e-06",
+   "pct": -42.9,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "2.7e-07",
+   "to": "1.8e-07",
+   "pct": -33.3,
    "direction": "down"
   },
   {
@@ -295,6 +268,33 @@
    "to": "6e-09",
    "pct": -85.0,
    "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pin",
+   "from": "6.32e-08",
+   "to": "7.5e-08",
+   "pct": 18.7,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pout",
+   "from": "4.4e-06",
+   "to": "2.2e-06",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pcr",
+   "from": "5.88e-08",
+   "to": "7e-08",
+   "pct": 19.0,
+   "direction": "up"
   }
  ],
  "counts": {
@@ -302,8 +302,8 @@
   "added": 1,
   "removed": 0,
   "price_changes": 32,
-  "drops": 24,
-  "hikes": 8
+  "drops": 28,
+  "hikes": 4
  },
  "baseline": "2026-10-17"
 }
