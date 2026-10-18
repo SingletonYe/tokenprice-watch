@@ -197,8 +197,17 @@ def diff(prev_rows: list[list], cur_rows: list[list], name_of: dict[str, str]) -
     }
 
 
-def latest_snapshot(root: pathlib.Path) -> pathlib.Path | None:
+def latest_snapshot(root: pathlib.Path, before: str | None = None) -> pathlib.Path | None:
+    """Most recent snapshot, optionally the most recent one strictly older than `before`.
+
+    The diff baseline must be the *previous day*, never the current day's own
+    snapshot: otherwise a second collection run on the same day reports only the
+    movement since the first run instead of the movement since yesterday, and the
+    day's published change log silently shrinks.
+    """
     snaps = sorted((root / "data" / "snapshots").glob("*.json"))
+    if before:
+        snaps = [s for s in snaps if s.stem < before]
     return snaps[-1] if snaps else None
 
 
@@ -224,7 +233,7 @@ def main(argv=None) -> int:
     name_of = {m["id"]: m["name"] for m in models}
     log(f"normalised {len(models)} endpoints / {len({m['base'] for m in models})} distinct models")
 
-    prev_path = latest_snapshot(root)
+    prev_path = latest_snapshot(root, before=today)
     prev_rows: list[list] = []
     prev_date = None
     if prev_path:
@@ -238,8 +247,9 @@ def main(argv=None) -> int:
         "added": [], "removed": [], "price_changes": [],
         "counts": {"models": len(rows), "added": 0, "removed": 0, "price_changes": 0, "drops": 0, "hikes": 0},
     }
+    changes["baseline"] = prev_date  # None on the very first run
     log(
-        "changes vs {prev}: {a} added, {r} removed, {c} price moves ({d} down / {u} up)".format(
+        "changes vs {prev} (day-to-day baseline): {a} added, {r} removed, {c} price moves ({d} down / {u} up)".format(
             prev=prev_date or "baseline",
             a=changes["counts"]["added"], r=changes["counts"]["removed"],
             c=changes["counts"]["price_changes"], d=changes["counts"]["drops"], u=changes["counts"]["hikes"],

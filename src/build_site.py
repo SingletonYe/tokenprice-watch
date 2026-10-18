@@ -1406,7 +1406,9 @@ def build_changes(b: Builder) -> None:
         f'<p class="lede">A permanent daily diff of every price in the catalogue. Latest update '
         f'{esc(human_date(today))}: {counts.get("price_changes", 0)} price move'
         f'{"s" if counts.get("price_changes", 0) != 1 else ""}, {counts.get("added", 0)} new endpoint'
-        f'{"s" if counts.get("added", 0) != 1 else ""}, {counts.get("removed", 0)} retired.</p>',
+        f'{"s" if counts.get("added", 0) != 1 else ""}, {counts.get("removed", 0)} retired'
+        + (f', measured against the {esc(ch.get("baseline"))} snapshot.' if ch.get("baseline") else ".")
+        + "</p>",
         b.ad_slot("top", "Advertisement"),
     ]
     body.append('<section class="card"><h2>Price moves on ' + esc(today) + "</h2>"
@@ -1454,12 +1456,14 @@ def build_changes(b: Builder) -> None:
         hist_index = sorted(d.change_days).index(date)
         older = sorted(d.change_days)[hist_index - 1] if hist_index > 0 else None
         newer = sorted(d.change_days)[hist_index + 1] if hist_index + 1 < len(d.change_days) else None
+        day_baseline = day.get("baseline")
         body = [
             "<h1>LLM API price changes — " + esc(human_date(date)) + "</h1>",
             f'<p class="lede">{c.get("price_changes", 0)} price move'
             f'{"s" if c.get("price_changes", 0) != 1 else ""} '
             f'({c.get("drops", 0)} down, {c.get("hikes", 0)} up) · {c.get("added", 0)} new · '
-            f'{c.get("removed", 0)} retired · {c.get("models", 0)} endpoints tracked.</p>',
+            f'{c.get("removed", 0)} retired · {c.get("models", 0)} endpoints tracked'
+            + (f", measured against {esc(day_baseline)}." if day_baseline else ".") + "</p>",
             b.ad_slot("top", "Advertisement"),
             '<section class="card">' + change_rows(day.get("price_changes", []), d) + "</section>",
         ]
