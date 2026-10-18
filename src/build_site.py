@@ -1420,11 +1420,12 @@ def build_changes(b: Builder) -> None:
 
         body.append('<div class="card"><h2>New endpoints</h2><ul class="plain">'
                     + ("".join(_entry(c) for c in ch.get("added", []))
-                       or '<li class="muted">None</li>')
+                       or '<li class="muted">No new endpoints in this update.</li>')
                     + "</ul></div>")
         body.append('<div class="card"><h2>Retired endpoints</h2><ul class="plain">'
-                    + ("".join(f'<li>{esc(c["name"])}</li>' for c in ch.get("removed", [])) or
-                       '<li class="muted">None</li>')
+                    + ("".join(f'<li>{esc(display_name(c["name"], c["id"].split("/")[0]))}</li>'
+                               for c in ch.get("removed", []))
+                       or '<li class="muted">Nothing retired in this update.</li>')
                     + "</ul></div></section>")
 
     body.append('<section class="card"><h2>Change history</h2>'
