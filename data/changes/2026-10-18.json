@@ -211,8 +211,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pin",
    "from": "1.8e-08",
-   "to": "6.88e-09",
-   "pct": -61.8,
+   "to": "6.5e-09",
+   "pct": -63.9,
    "direction": "down"
   },
   {
@@ -220,8 +220,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pout",
    "from": "1.28e-06",
-   "to": "1.43616e-07",
-   "pct": -88.8,
+   "to": "4.5e-07",
+   "pct": -64.8,
    "direction": "down"
   },
   {
@@ -229,8 +229,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pcr",
    "from": "1.8e-08",
-   "to": "1.523e-09",
-   "pct": -91.5,
+   "to": "6.5e-09",
+   "pct": -63.9,
    "direction": "down"
   },
   {
