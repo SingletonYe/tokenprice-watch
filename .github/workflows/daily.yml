@@ -10,8 +10,13 @@ name: Daily price snapshot and deploy
 
 on:
   schedule:
-    # 06:17 UTC daily — deliberately off the hour, since cron peaks on :00
+    # 06:17 UTC daily — deliberately off the hour, since cron peaks on :00.
+    # A second, later slot is deliberate redundancy: GitHub occasionally delays or
+    # drops scheduled runs under load (it dropped 2026-10-18's run), and the
+    # pipeline is idempotent, so a duplicate run recomputes the same day-to-day
+    # diff and redeploys the same content.
     - cron: "17 6 * * *"
+    - cron: "47 13 * * *"
   workflow_dispatch:
     inputs:
       reason:
