@@ -13,17 +13,17 @@
    "name": "DeepSeek: DeepSeek V4 Flash 0731",
    "field": "pin",
    "from": "1.8e-08",
-   "to": "1e-07",
-   "pct": 455.6,
-   "direction": "up"
+   "to": "1.51e-08",
+   "pct": -16.1,
+   "direction": "down"
   },
   {
    "id": "deepseek/deepseek-v4-flash-0731",
    "name": "DeepSeek: DeepSeek V4 Flash 0731",
    "field": "pout",
    "from": "1.28e-06",
-   "to": "3e-07",
-   "pct": -76.6,
+   "to": "4.5e-07",
+   "pct": -64.8,
    "direction": "down"
   },
   {
@@ -31,9 +31,9 @@
    "name": "DeepSeek: DeepSeek V4 Flash 0731",
    "field": "pcr",
    "from": "1.8e-08",
-   "to": "3e-08",
-   "pct": 66.7,
-   "direction": "up"
+   "to": "1.51e-08",
+   "pct": -16.1,
+   "direction": "down"
   },
   {
    "id": "deepseek/deepseek-v4.1-flash",
@@ -162,6 +162,15 @@
    "direction": "up"
   },
   {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "4.8e-06",
+   "to": "2.5e-06",
+   "pct": -47.9,
+   "direction": "down"
+  },
+  {
    "id": "z-ai/glm-5.3-flash",
    "name": "Z.ai: GLM 5.3 Flash",
    "field": "pin",
@@ -211,8 +220,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pin",
    "from": "1.8e-08",
-   "to": "6.5e-09",
-   "pct": -63.9,
+   "to": "1.208e-08",
+   "pct": -32.9,
    "direction": "down"
   },
   {
@@ -220,8 +229,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pout",
    "from": "1.28e-06",
-   "to": "4.5e-07",
-   "pct": -64.8,
+   "to": "1.43616e-07",
+   "pct": -88.8,
    "direction": "down"
   },
   {
@@ -229,8 +238,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pcr",
    "from": "1.8e-08",
-   "to": "6.5e-09",
-   "pct": -63.9,
+   "to": "1.523e-09",
+   "pct": -91.5,
    "direction": "down"
   },
   {
@@ -292,9 +301,9 @@
   "models": 471,
   "added": 1,
   "removed": 0,
-  "price_changes": 31,
-  "drops": 21,
-  "hikes": 10
+  "price_changes": 32,
+  "drops": 24,
+  "hikes": 8
  },
  "baseline": "2026-10-17"
 }
