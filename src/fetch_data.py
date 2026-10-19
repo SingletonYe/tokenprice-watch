@@ -217,6 +217,10 @@ def main(argv=None) -> int:
     ap.add_argument("--date", default=None, help="override snapshot date (YYYY-MM-DD), default: today UTC")
     ap.add_argument("--api-url", default=API_URL)
     ap.add_argument("--dry-run", action="store_true", help="fetch and report, write nothing")
+    ap.add_argument("--if-missing", action="store_true",
+                    help="skip collection entirely when today already has a snapshot; used by both "
+                         "daily pipelines so the day's published numbers are written once and every "
+                         "later run republishes the same figures instead of shifting them")
     args = ap.parse_args(argv)
 
     root = pathlib.Path(args.root).resolve()
@@ -232,6 +236,12 @@ def main(argv=None) -> int:
     rows = lean(models)
     name_of = {m["id"]: m["name"] for m in models}
     log(f"normalised {len(models)} endpoints / {len({m['base'] for m in models})} distinct models")
+
+    existing_today = root / "data" / "snapshots" / f"{today}.json"
+    if args.if_missing and existing_today.exists() and not args.dry_run:
+        log(f"{today} already collected ({existing_today.name}); nothing to do "
+            "(the day's snapshot is written once, so published figures stay stable)")
+        return 0
 
     prev_path = latest_snapshot(root, before=today)
     prev_rows: list[list] = []

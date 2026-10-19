@@ -49,7 +49,9 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Collect today's snapshot and diff
-        run: python3 src/fetch_data.py
+        run: python3 src/fetch_data.py --if-missing
+        # skips entirely if the day is already collected (keeps published figures
+        # stable and keeps this deployment identical to the other one);
         # aborts without writing anything if upstream returns an implausible payload
 
       - name: Build the static site

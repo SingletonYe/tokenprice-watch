@@ -198,6 +198,14 @@ class Dataset:
         self.date: str = self.latest["date"]
         self.models: list[dict] = self.latest["models"]
         self.changes: dict = self.latest.get("changes") or {}
+        self.fetched_at: str = self.latest.get("fetched_at") or ""
+        self.collected: str = ""
+        if self.fetched_at:
+            try:
+                parsed = dt.datetime.fromisoformat(self.fetched_at.replace("Z", "+00:00"))
+                self.collected = parsed.astimezone(dt.timezone.utc).strftime("%H:%M UTC")
+            except ValueError:
+                self.collected = ""
         self.snapshots: dict[str, list[list]] = {}
         for p in sorted((root / "data" / "snapshots").glob("*.json")):
             snap = json.loads(p.read_text())
@@ -504,7 +512,7 @@ class Builder:
     <a class="brand" href="/"><span class="brand-mark">TP</span> <span>{esc(self.site)}</span></a>
     {nav}
   </div>
-  <div class="ticker"><div class="wrap"><span id="ticker">Data as of {esc(human_date(self.d.date))}</span></div></div>
+  <div class="ticker"><div class="wrap"><span id="ticker">Data as of {esc(human_date(self.d.date))}{f" · collected {esc(self.d.collected)}" if self.d.collected else ""}{f" · compared with {esc(self.d.changes.get('baseline'))}" if self.d.changes.get('baseline') else ""}</span></div></div>
 </header>
 <main id="main" class="wrap">
 {crumb_html}
@@ -703,7 +711,12 @@ def build_home(b: Builder) -> None:
         f'{len(d.bases)} models · {len(d.vendors)} providers</p>',
         "<h1>LLM API pricing, tracked daily</h1>",
         f'<p class="lede">Every model price on one page, refreshed every day at 06:17 UTC. '
-        f'Today: <strong>{esc(headline)}</strong>.</p>',
+        f'Today: <strong>{esc(headline)}</strong>'
+        + (f", measured against the {esc(d.changes.get('baseline'))} snapshot" if d.changes.get("baseline") else "")
+        + (f". This update was collected at {esc(d.collected)}; inference prices can move during the "
+           "day, and each update is snapshotted so you can always check what a price was on a given date."
+           if d.collected else ".")
+        + "</p>",
         '<p class="hero-cta"><a class="btn" href="/models.html">See all prices</a> '
         '<a class="btn ghost" href="/cost-calculator.html">Calculate your bill</a></p>',
         "</section>",
