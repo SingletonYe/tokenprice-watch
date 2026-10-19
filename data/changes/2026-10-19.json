@@ -238,6 +238,33 @@
    "direction": "down"
   },
   {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "4.8e-08",
+   "to": "3.9e-08",
+   "pct": -18.8,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "2e-07",
+   "to": "6.5e-07",
+   "pct": 225.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "8e-09",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
    "id": "~deepseek/deepseek-flash-latest",
    "name": "DeepSeek: DeepSeek Flash Latest",
    "field": "pin",
@@ -278,8 +305,17 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pin",
    "from": "1.14e-08",
-   "to": "6.5e-09",
-   "pct": -43.0,
+   "to": "5.2e-09",
+   "pct": -54.4,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "4.5e-07",
+   "to": "1.2e-07",
+   "pct": -73.3,
    "direction": "down"
   },
   {
@@ -287,8 +323,8 @@
    "name": "DeepSeek: DeepSeek V4 Flash Latest",
    "field": "pcr",
    "from": "1.14e-08",
-   "to": "6.5e-09",
-   "pct": -43.0,
+   "to": "3.36e-09",
+   "pct": -70.5,
    "direction": "down"
   },
   {
@@ -316,6 +352,33 @@
    "from": "1.8e-07",
    "to": "2.28e-07",
    "pct": 26.7,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "4.8e-08",
+   "to": "3.9e-08",
+   "pct": -18.8,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "2e-07",
+   "to": "6.5e-07",
+   "pct": 225.0,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "8e-09",
+   "pct": 33.3,
    "direction": "up"
   },
   {
@@ -350,9 +413,9 @@
   "models": 471,
   "added": 0,
   "removed": 0,
-  "price_changes": 38,
-  "drops": 12,
-  "hikes": 26
+  "price_changes": 45,
+  "drops": 15,
+  "hikes": 30
  },
  "baseline": "2026-10-18"
 }
