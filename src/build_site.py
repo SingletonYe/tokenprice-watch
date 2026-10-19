@@ -1401,6 +1401,12 @@ def build_changes(b: Builder) -> None:
     ch = d.change_days.get(today) or {"counts": {}, "price_changes": [], "added": [], "removed": []}
     counts = ch.get("counts", {})
 
+    def _entry(c: dict) -> str:
+        """Link a change-log entry to its model page, or to the archive if retired."""
+        href = model_path(c["id"]) if c["id"] in d.by_id else "/retired.html"
+        return (f'<li><a href="{esc(href)}">{esc(c["name"])}</a>'
+                f' <code>{esc(c["id"])}</code></li>')
+
     body = [
         "<h1>LLM API price changes</h1>",
         f'<p class="lede">A permanent daily diff of every price in the catalogue. Latest update '
@@ -1415,11 +1421,6 @@ def build_changes(b: Builder) -> None:
                 + change_rows(ch.get("price_changes", []), d) + "</section>")
     if ch.get("added") or ch.get("removed"):
         body.append('<section class="grid-2">')
-        def _entry(c: dict) -> str:
-            href = model_path(c["id"]) if c["id"] in d.by_id else "/retired.html"
-            return (f'<li><a href="{esc(href)}">{esc(c["name"])}</a>'
-                    f' <code>{esc(c["id"])}</code></li>')
-
         body.append('<div class="card"><h2>New endpoints</h2><ul class="plain">'
                     + ("".join(_entry(c) for c in ch.get("added", []))
                        or '<li class="muted">No new endpoints in this update.</li>')

@@ -1,0 +1,358 @@
+{
+ "date": "2026-10-19",
+ "added": [],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "1.14e-08",
+   "to": "1.5e-07",
+   "pct": 1215.8,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pout",
+   "from": "4.5e-07",
+   "to": "1.5e-07",
+   "pct": -66.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "1.14e-08",
+   "to": "4.2e-08",
+   "pct": 268.4,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "2.088e-07",
+   "to": "9.5526e-07",
+   "pct": 357.5,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "4.176e-07",
+   "to": "1.91052e-06",
+   "pct": 357.5,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "1.74e-08",
+   "to": "7.9605e-08",
+   "pct": 357.5,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "4e-08",
+   "to": "4.56e-08",
+   "pct": 14.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "1.44e-07",
+   "to": "8e-08",
+   "pct": -44.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "3e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "1.2e-06",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pcr",
+   "from": "3e-09",
+   "to": "6e-09",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "6.75e-08",
+   "to": "9e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.25e-07",
+   "to": "3e-07",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "3.75e-08",
+   "to": "5e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.2-3b-instruct",
+   "name": "Meta: Llama 3.2 3B Instruct",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "5.09e-08",
+   "pct": 1.8,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.2-3b-instruct",
+   "name": "Meta: Llama 3.2 3B Instruct",
+   "field": "pout",
+   "from": "3.3e-07",
+   "to": "3.35e-07",
+   "pct": 1.5,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pin",
+   "from": "3.04e-07",
+   "to": "2.39e-07",
+   "pct": -21.4,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pin",
+   "from": "2.6e-07",
+   "to": "1.95e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pout",
+   "from": "2.6e-06",
+   "to": "1.56e-06",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pin",
+   "from": "8.25e-08",
+   "to": "1.32e-07",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pout",
+   "from": "3.3e-07",
+   "to": "5.28e-07",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pcr",
+   "from": "2.0625e-08",
+   "to": "3.3e-08",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pin",
+   "from": "7.506e-07",
+   "to": "8.34e-07",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pout",
+   "from": "2.2509e-06",
+   "to": "2.501e-06",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pcr",
+   "from": "3.78e-08",
+   "to": "4.2e-08",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "1.8e-06",
+   "to": "1.4e-06",
+   "pct": -22.2,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "5.7e-08",
+   "pct": 14.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "8e-09",
+   "to": "7e-09",
+   "pct": -12.5,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "1.2e-07",
+   "to": "2.25e-07",
+   "pct": 87.5,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "1.2e-07",
+   "to": "2.3e-07",
+   "pct": 91.7,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "1.14e-08",
+   "to": "6.5e-09",
+   "pct": -43.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "1.14e-08",
+   "to": "6.5e-09",
+   "pct": -43.0,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "2.5e-07",
+   "to": "2.38e-07",
+   "pct": -4.8,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "8e-06",
+   "to": "1.6e-05",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.8e-07",
+   "to": "2.28e-07",
+   "pct": 26.7,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "4e-08",
+   "pct": -46.7,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pout",
+   "from": "2.2e-06",
+   "to": "6e-06",
+   "pct": 172.7,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pcr",
+   "from": "7e-08",
+   "to": "2.5e-08",
+   "pct": -64.3,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 471,
+  "added": 0,
+  "removed": 0,
+  "price_changes": 38,
+  "drops": 12,
+  "hikes": 26
+ },
+ "baseline": "2026-10-18"
+}
