@@ -234,7 +234,30 @@ def main(argv=None) -> int:
         log(f"ABORT: only {len(models)} models returned, refusing to overwrite data")
         return 2
     rows = lean(models)
-    name_of = {m["id"]: m["name"] for m in models}
+
+    # Names sidecar. A retired endpoint is gone from the live catalogue, and the
+    # lean snapshot stores only ids and numbers, so without this map the change
+    # log and the archive could only show a raw id like "deepseek/deepseek-r1".
+    # Seeded from the previous run's latest.json *before* it is overwritten.
+    names_path = root / "data" / "names.json"
+    name_of: dict[str, str] = {}
+    if names_path.exists():
+        try:
+            name_of = json.loads(names_path.read_text())
+        except ValueError:
+            log("names.json was unreadable; rebuilding it from this run")
+            name_of = {}
+    stale = root / "data" / "latest.json"
+    if stale.exists():
+        try:
+            for m in json.loads(stale.read_text()).get("models", []):
+                if m.get("id") and m.get("name"):
+                    name_of.setdefault(m["id"], m["name"])
+        except ValueError:
+            pass
+    for m in models:
+        if m.get("name"):
+            name_of[m["id"]] = m["name"]
     log(f"normalised {len(models)} endpoints / {len({m['base'] for m in models})} distinct models")
 
     existing_today = root / "data" / "snapshots" / f"{today}.json"
@@ -271,6 +294,8 @@ def main(argv=None) -> int:
 
     (root / "data" / "snapshots").mkdir(parents=True, exist_ok=True)
     (root / "data" / "changes").mkdir(parents=True, exist_ok=True)
+    names_path.write_text(json.dumps(dict(sorted(name_of.items())), indent=1) + "\n")
+    log(f"names map holds {len(name_of)} endpoints")
 
     snapshot = {
         "date": today,
@@ -298,7 +323,7 @@ def main(argv=None) -> int:
         row = prev_rows_by_id.get(gone["id"], [])
         archive.append({
             "id": gone["id"],
-            "name": gone["name"],
+            "name": gone.get("name") or name_of.get(gone["id"], gone["id"]),
             "last_seen": prev_date or today,
             "ctx": row[1] if len(row) > 1 else None,
             "pin": row[2] if len(row) > 2 else None,

@@ -1,0 +1,470 @@
+{
+ "date": "2026-10-20",
+ "added": [
+  {
+   "id": "inception/mercury-3",
+   "name": "Inception: Mercury 3"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash:free",
+   "name": "MiniMax: MiniMax M3.1 Flash (free)"
+  }
+ ],
+ "removed": [
+  {
+   "id": "deepseek/deepseek-r1",
+   "name": "DeepSeek: R1"
+  },
+  {
+   "id": "microsoft/wizardlm-2-8x22b",
+   "name": "WizardLM-2 8x22B"
+  },
+  {
+   "id": "sao10k/l3.3-euryale-70b",
+   "name": "Sao10K: Llama 3.3 Euryale 70B"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-chat",
+   "name": "DeepSeek: DeepSeek V3",
+   "field": "pin",
+   "from": "3.2e-07",
+   "to": "2.574e-07",
+   "pct": -19.6,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-chat",
+   "name": "DeepSeek: DeepSeek V3",
+   "field": "pout",
+   "from": "8.9e-07",
+   "to": "1.0287e-06",
+   "pct": 15.6,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "4.4e-07",
+   "pct": 193.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pout",
+   "from": "1.5e-07",
+   "to": "1.32e-06",
+   "pct": 780.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "4.2e-08",
+   "to": "1.4e-08",
+   "pct": -66.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "4.56e-08",
+   "to": "3.52e-08",
+   "pct": -22.8,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "8e-08",
+   "to": "1.12e-08",
+   "pct": -86.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "4e-08",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pout",
+   "from": "1e-07",
+   "to": "5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pcr",
+   "from": null,
+   "to": "2e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "1.5e-07",
+   "pct": 50.0,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pout",
+   "from": "4e-07",
+   "to": "5e-07",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pcr",
+   "from": "8e-08",
+   "to": "2e-08",
+   "pct": -75.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pin",
+   "from": "1.95e-07",
+   "to": "2.7e-07",
+   "pct": 38.5,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pout",
+   "from": "1.56e-06",
+   "to": "2.16e-06",
+   "pct": 38.5,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pcr",
+   "from": null,
+   "to": "2.7e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pin",
+   "from": "5e-07",
+   "to": "3.9e-07",
+   "pct": -22.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pout",
+   "from": "3.6e-06",
+   "to": "2.34e-06",
+   "pct": -35.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pcr",
+   "from": "3e-07",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.6-35b-a3b",
+   "name": "Qwen: Qwen3.6 35B A3B",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "1e-07",
+   "pct": -33.3,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.6-35b-a3b",
+   "name": "Qwen: Qwen3.6 35B A3B",
+   "field": "pout",
+   "from": "1e-06",
+   "to": "9.5e-07",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pin",
+   "from": "2.4e-07",
+   "to": "4e-08",
+   "pct": -83.3,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pout",
+   "from": "2.2e-06",
+   "to": "1.35e-06",
+   "pct": -38.6,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "1.8e-08",
+   "pct": -64.0,
+   "direction": "down"
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "field": "pin",
+   "from": "1e-06",
+   "to": "3e-07",
+   "pct": -70.0,
+   "direction": "down"
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "field": "pout",
+   "from": "3e-06",
+   "to": "1e-06",
+   "pct": -66.7,
+   "direction": "down"
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "4e-08",
+   "pct": -60.0,
+   "direction": "down"
+  },
+  {
+   "id": "upstage/solar-pro4",
+   "name": "Upstage: Solar Pro 4",
+   "field": "pin",
+   "from": "9e-08",
+   "to": "1.5e-07",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "upstage/solar-pro4",
+   "name": "Upstage: Solar Pro 4",
+   "field": "pout",
+   "from": "3.6e-07",
+   "to": "6e-07",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "upstage/solar-pro4",
+   "name": "Upstage: Solar Pro 4",
+   "field": "pcr",
+   "from": "1.8e-08",
+   "to": "3e-08",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pin",
+   "from": "5e-07",
+   "to": "5.5e-07",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pout",
+   "from": "2e-06",
+   "to": "2.2e-06",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "1.1e-07",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pin",
+   "from": "1e-06",
+   "to": "6e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pout",
+   "from": "3.2e-06",
+   "to": "1.92e-06",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pcr",
+   "from": "2e-07",
+   "to": "1.2e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "3.9e-08",
+   "to": "4.8e-08",
+   "pct": 23.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "6.5e-07",
+   "to": "1.6e-07",
+   "pct": -75.4,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pcr",
+   "from": "8e-09",
+   "to": "6e-09",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "5.7e-08",
+   "to": "5e-08",
+   "pct": -12.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "2.4e-08",
+   "pct": -96.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "7e-09",
+   "to": "1e-08",
+   "pct": 42.9,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "3.9e-08",
+   "to": "4.8e-08",
+   "pct": 23.1,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "6.5e-07",
+   "to": "1.6e-07",
+   "pct": -75.4,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "8e-09",
+   "to": "6e-09",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pin",
+   "from": "4e-08",
+   "to": "7.9e-08",
+   "pct": 97.5,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pout",
+   "from": "6e-06",
+   "to": "1.4e-06",
+   "pct": -76.7,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-latest",
+   "name": "Z.ai: GLM Latest",
+   "field": "pcr",
+   "from": "2.5e-08",
+   "to": "7.8e-08",
+   "pct": 212.0,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 470,
+  "added": 2,
+  "removed": 3,
+  "price_changes": 48,
+  "drops": 27,
+  "hikes": 21
+ },
+ "baseline": "2026-10-19"
+}

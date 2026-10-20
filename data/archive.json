@@ -1,0 +1,38 @@
+[
+ {
+  "id": "deepseek/deepseek-r1",
+  "name": "DeepSeek: R1",
+  "last_seen": "2026-10-19",
+  "ctx": 64000,
+  "pin": "7e-07",
+  "pout": "2.5e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": 11.4,
+  "ci": 24.6
+ },
+ {
+  "id": "microsoft/wizardlm-2-8x22b",
+  "name": "WizardLM-2 8x22B",
+  "last_seen": "2026-10-19",
+  "ctx": 65535,
+  "pin": "6.2e-07",
+  "pout": "6.2e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "sao10k/l3.3-euryale-70b",
+  "name": "Sao10K: Llama 3.3 Euryale 70B",
+  "last_seen": "2026-10-19",
+  "ctx": 131072,
+  "pin": "6.5e-07",
+  "pout": "7.5e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ }
+]
