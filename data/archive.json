@@ -12,6 +12,30 @@
   "ci": 24.6
  },
  {
+  "id": "google/gemini-2.5-flash:batch",
+  "name": "Google: Gemini 2.5 Flash (batch)",
+  "last_seen": "2026-10-20",
+  "ctx": 1048576,
+  "pin": "1.5e-07",
+  "pout": "1.25e-06",
+  "pcr": "3e-08",
+  "pcw": null,
+  "iq": 15.5,
+  "ci": null
+ },
+ {
+  "id": "google/gemini-2.5-pro:batch",
+  "name": "Google: Gemini 2.5 Pro (batch)",
+  "last_seen": "2026-10-20",
+  "ctx": 1048576,
+  "pin": "6.25e-07",
+  "pout": "5e-06",
+  "pcr": "1.25e-07",
+  "pcw": null,
+  "iq": 16.1,
+  "ci": 33.3
+ },
+ {
   "id": "microsoft/wizardlm-2-8x22b",
   "name": "WizardLM-2 8x22B",
   "last_seen": "2026-10-19",

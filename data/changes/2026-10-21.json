@@ -1,0 +1,412 @@
+{
+ "date": "2026-10-21",
+ "added": [],
+ "removed": [
+  {
+   "id": "google/gemini-2.5-flash:batch",
+   "name": "Google: Gemini 2.5 Flash (batch)"
+  },
+  {
+   "id": "google/gemini-2.5-pro:batch",
+   "name": "Google: Gemini 2.5 Pro (batch)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "3.52e-08",
+   "to": "4.9e-08",
+   "pct": 39.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "1.12e-08",
+   "to": "3.75e-07",
+   "pct": 3248.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "1.6e-09",
+   "to": "1e-09",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pin",
+   "from": "6.8e-07",
+   "to": "1.36e-06",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pout",
+   "from": "2.09e-06",
+   "to": "4.18e-06",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pcr",
+   "from": "7e-08",
+   "to": "1.4e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pin",
+   "from": "8e-08",
+   "to": "3e-07",
+   "pct": 275.0,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pout",
+   "from": "4.5e-07",
+   "to": "2.4e-06",
+   "pct": 433.3,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pcr",
+   "from": null,
+   "to": "1.5e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-122b-a10b",
+   "name": "Qwen: Qwen3.5-122B-A10B",
+   "field": "pin",
+   "from": "2.6e-07",
+   "to": "4e-07",
+   "pct": 53.8,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-122b-a10b",
+   "name": "Qwen: Qwen3.5-122B-A10B",
+   "field": "pout",
+   "from": "2.08e-06",
+   "to": "3.2e-06",
+   "pct": 53.8,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-35b-a3b",
+   "name": "Qwen: Qwen3.5-35B-A3B",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "1.4e-07",
+   "pct": -6.7,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "8e-08",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pout",
+   "from": "1.5e-07",
+   "to": "1.3e-07",
+   "pct": -13.3,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pcr",
+   "from": null,
+   "to": "4e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pin",
+   "from": "1.4e-07",
+   "to": "1.19e-07",
+   "pct": -15.0,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pout",
+   "from": "2.8e-07",
+   "to": "2.38e-07",
+   "pct": -15.0,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pcr",
+   "from": "2.8e-09",
+   "to": "2.55e-09",
+   "pct": -8.9,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pin",
+   "from": "4.35e-07",
+   "to": "3.045e-07",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pout",
+   "from": "8.7e-07",
+   "to": "6.09e-07",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pcr",
+   "from": "3.6e-09",
+   "to": "2.8e-09",
+   "pct": -22.2,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pin",
+   "from": "6e-07",
+   "to": "1e-06",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pout",
+   "from": "1.92e-06",
+   "to": "3.2e-06",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5",
+   "name": "Z.ai: GLM 5",
+   "field": "pcr",
+   "from": "1.2e-07",
+   "to": "2e-07",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pin",
+   "from": "9.66e-07",
+   "to": "1.4e-06",
+   "pct": 44.9,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pout",
+   "from": "3.036e-06",
+   "to": "4.4e-06",
+   "pct": 44.9,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pcr",
+   "from": "1.794e-07",
+   "to": "2.6e-07",
+   "pct": 44.9,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pin",
+   "from": "6.2e-07",
+   "to": "3.41e-08",
+   "pct": -94.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pout",
+   "from": "2.42e-06",
+   "to": "7e-06",
+   "pct": 189.3,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pcr",
+   "from": "1.4e-07",
+   "to": "3.3e-08",
+   "pct": -76.4,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "4.8e-08",
+   "to": "4.1191e-08",
+   "pct": -14.2,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "1.6e-07",
+   "to": "3.75e-07",
+   "pct": 134.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "3.75e-09",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "7e-08",
+   "pct": 40.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "2.4e-08",
+   "to": "5e-07",
+   "pct": 1983.3,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "1e-08",
+   "to": "8e-09",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "5.2e-09",
+   "to": "2.1e-08",
+   "pct": 303.8,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "1.2e-07",
+   "to": "5.28e-07",
+   "pct": 340.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "3.36e-09",
+   "to": "5.6e-09",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "1.6e-05",
+   "to": "2.4e-05",
+   "pct": 50.0,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "4.8e-08",
+   "to": "4.1191e-08",
+   "pct": -14.2,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "1.6e-07",
+   "to": "3.75e-07",
+   "pct": 134.4,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "3.75e-09",
+   "pct": -37.5,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 468,
+  "added": 0,
+  "removed": 2,
+  "price_changes": 43,
+  "drops": 17,
+  "hikes": 26
+ },
+ "baseline": "2026-10-20"
+}
