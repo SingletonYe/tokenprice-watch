@@ -12,6 +12,18 @@
   "ci": 24.6
  },
  {
+  "id": "google/gemini-2.5-flash-lite:batch",
+  "name": "Google: Gemini 2.5 Flash Lite (batch)",
+  "last_seen": "2026-10-21",
+  "ctx": 1048576,
+  "pin": "5e-08",
+  "pout": "2e-07",
+  "pcr": "1e-08",
+  "pcw": null,
+  "iq": 10.4,
+  "ci": null
+ },
+ {
   "id": "google/gemini-2.5-flash:batch",
   "name": "Google: Gemini 2.5 Flash (batch)",
   "last_seen": "2026-10-20",

@@ -382,6 +382,7 @@
  "qwen/qwen3.8-max-0902": "Qwen: Qwen3.8 Max (0902)",
  "qwen/qwen3.8-max-prime": "Qwen: Qwen3.8 Max Prime",
  "qwen/qwen3.8-omni-flash": "Qwen: Qwen3.8 Omni Flash",
+ "recursive/flint-v1.0:free": "Recursive: Flint (free)",
  "reflection/beam-1.0-501b-a23b": "Reflection: Beam 1.0 501B A23B",
  "rekaai/reka-edge": "Reka Edge",
  "rekaai/reka-flash-3": "Reka Flash 3",
