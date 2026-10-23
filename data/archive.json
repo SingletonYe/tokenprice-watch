@@ -60,6 +60,18 @@
   "ci": null
  },
  {
+  "id": "minimax/minimax-m3.1-flash:free",
+  "name": "MiniMax: MiniMax M3.1 Flash (free)",
+  "last_seen": "2026-10-22",
+  "ctx": 1000000,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": 42.7,
+  "ci": null
+ },
+ {
   "id": "sao10k/l3.3-euryale-70b",
   "name": "Sao10K: Llama 3.3 Euryale 70B",
   "last_seen": "2026-10-19",
