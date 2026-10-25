@@ -72,6 +72,42 @@
   "ci": null
  },
  {
+  "id": "openai/gpt-3.5-turbo",
+  "name": "OpenAI: GPT-3.5 Turbo",
+  "last_seen": "2026-10-24",
+  "ctx": 16385,
+  "pin": "5e-07",
+  "pout": "1.5e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": 5.5,
+  "ci": 10.7
+ },
+ {
+  "id": "openai/gpt-3.5-turbo-instruct",
+  "name": "OpenAI: GPT-3.5 Turbo Instruct",
+  "last_seen": "2026-10-24",
+  "ctx": 4095,
+  "pin": "1.5e-06",
+  "pout": "2e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "openai/gpt-3.5-turbo:batch",
+  "name": "OpenAI: GPT-3.5 Turbo (batch)",
+  "last_seen": "2026-10-24",
+  "ctx": 16385,
+  "pin": "2.5e-07",
+  "pout": "7.5e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": 5.5,
+  "ci": 10.7
+ },
+ {
   "id": "sao10k/l3.3-euryale-70b",
   "name": "Sao10K: Llama 3.3 Euryale 70B",
   "last_seen": "2026-10-19",

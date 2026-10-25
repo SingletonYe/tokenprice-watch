@@ -130,6 +130,7 @@
  "inclusionai/ling-3.1-flash": "inclusionAI: Ling 3.1 Flash",
  "inference-net/schematron-v2-small": "Inference.net: Schematron V2 Small",
  "inference-net/schematron-v2-turbo": "Inference.net: Schematron V2 Turbo",
+ "liquid/lfm-2.5-2.6b": "LiquidAI: LFM2.5-2.6B",
  "liquid/lfm-2.5-2.6b:free": "LiquidAI: LFM2.5-2.6B (free)",
  "liquid/lfm-2.5-24b-a2b": "LiquidAI: LFM2.5-24B-A2B",
  "mancer/weaver": "Mancer: Weaver (alpha)",
