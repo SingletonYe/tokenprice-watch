@@ -1,5 +1,17 @@
 [
  {
+  "id": "arcee-ai/trinity-large-thinking",
+  "name": "Arcee AI: Trinity Large Thinking",
+  "last_seen": "2026-10-25",
+  "ctx": 262144,
+  "pin": "2.5e-07",
+  "pout": "8e-07",
+  "pcr": "6e-08",
+  "pcw": null,
+  "iq": 10.8,
+  "ci": 25.8
+ },
+ {
   "id": "deepseek/deepseek-r1",
   "name": "DeepSeek: R1",
   "last_seen": "2026-10-19",
