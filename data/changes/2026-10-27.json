@@ -1,0 +1,449 @@
+{
+ "date": "2026-10-27",
+ "added": [
+  {
+   "id": "openai/gpt-6.1-terra",
+   "name": "OpenAI: GPT-6.1 Terra"
+  },
+  {
+   "id": "openai/gpt-6.1-terra-pro",
+   "name": "OpenAI: GPT-6.1 Terra Pro"
+  },
+  {
+   "id": "openai/gpt-6.1-terra-pro:batch",
+   "name": "OpenAI: GPT-6.1 Terra Pro (batch)"
+  },
+  {
+   "id": "openai/gpt-6.1-terra:batch",
+   "name": "OpenAI: GPT-6.1 Terra (batch)"
+  }
+ ],
+ "removed": [
+  {
+   "id": "ibm-granite/granite-4.0-h-micro",
+   "name": "IBM: Granite 4.0 Micro"
+  },
+  {
+   "id": "mistralai/codestral-2508:batch",
+   "name": "Mistral: Codestral 2508 (batch)"
+  },
+  {
+   "id": "mistralai/ministral-8b-2512:batch",
+   "name": "Mistral: Ministral 3 8B 2512 (batch)"
+  },
+  {
+   "id": "mistralai/mistral-large-2512:batch",
+   "name": "Mistral: Mistral Large 3 2512 (batch)"
+  },
+  {
+   "id": "mistralai/mistral-medium-3.1:batch",
+   "name": "Mistral: Mistral Medium 3.1 (batch)"
+  },
+  {
+   "id": "mistralai/mistral-small-2603:batch",
+   "name": "Mistral: Mistral Small 4 (batch)"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b:free",
+   "name": "NVIDIA: Nemotron 3 Super (free)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pin",
+   "from": "9.1e-08",
+   "to": "5e-08",
+   "pct": -45.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pout",
+   "from": "1.82e-07",
+   "to": "4.5e-07",
+   "pct": 147.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pcr",
+   "from": "1.82e-08",
+   "to": "5e-08",
+   "pct": 174.7,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "4.4e-07",
+   "to": "1.19e-07",
+   "pct": -73.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pout",
+   "from": "1.32e-06",
+   "to": "2.38e-07",
+   "pct": -82.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "1.4e-08",
+   "to": "2.38e-08",
+   "pct": 70.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "7.97616e-07",
+   "to": "9.5526e-07",
+   "pct": 19.8,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.595232e-06",
+   "to": "1.91052e-06",
+   "pct": 19.8,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "6.6468e-08",
+   "to": "7.9605e-08",
+   "pct": 19.8,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "2e-08",
+   "to": "1.4e-07",
+   "pct": 600.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "1e-06",
+   "to": "4.2e-07",
+   "pct": -58.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "1.5e-08",
+   "to": "4.2e-09",
+   "pct": -72.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pin",
+   "from": "4e-08",
+   "to": "5e-08",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pout",
+   "from": "5e-08",
+   "to": "1e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pcr",
+   "from": "2e-08",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pin",
+   "from": "6.712e-07",
+   "to": "6.725e-07",
+   "pct": 0.2,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pout",
+   "from": "3.35e-06",
+   "to": "3.1e-06",
+   "pct": -7.5,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pin",
+   "from": "1.52e-07",
+   "to": "1.79e-07",
+   "pct": 17.8,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pcr",
+   "from": "1.42e-07",
+   "to": "1.69e-07",
+   "pct": 19.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pin",
+   "from": "2.7e-07",
+   "to": "2.6e-07",
+   "pct": -3.7,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pout",
+   "from": "2.16e-06",
+   "to": "2.6e-06",
+   "pct": 20.4,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pcr",
+   "from": "2.7e-07",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pin",
+   "from": "1.19e-07",
+   "to": "4e-07",
+   "pct": 236.1,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pout",
+   "from": "2.38e-07",
+   "to": "2e-06",
+   "pct": 740.3,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5",
+   "name": "Xiaomi: MiMo-V2.5",
+   "field": "pcr",
+   "from": "2.55e-09",
+   "to": "8e-08",
+   "pct": 3037.3,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pin",
+   "from": "3.045e-07",
+   "to": "4.8e-07",
+   "pct": 57.6,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pout",
+   "from": "6.09e-07",
+   "to": "1.8e-06",
+   "pct": 195.6,
+   "direction": "up"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pcr",
+   "from": "2.8e-09",
+   "to": "9.6e-08",
+   "pct": 3328.6,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6v",
+   "name": "Z.ai: GLM 4.6V",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "5.5e-08",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pin",
+   "from": "1.4e-06",
+   "to": "9.66e-07",
+   "pct": -31.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pout",
+   "from": "4.4e-06",
+   "to": "3.036e-06",
+   "pct": -31.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pcr",
+   "from": "2.6e-07",
+   "to": "1.794e-07",
+   "pct": -31.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "2.066e-07",
+   "to": "2.173e-07",
+   "pct": 5.2,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "2.1e-07",
+   "to": "2.2e-07",
+   "pct": 4.8,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.52e-07",
+   "to": "1.79e-07",
+   "pct": 17.8,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.42e-07",
+   "to": "1.69e-07",
+   "pct": 19.0,
+   "direction": "up"
+  },
+  {
+   "id": "~openai/gpt-terra-latest",
+   "name": "OpenAI: GPT Terra Latest",
+   "field": "pin",
+   "from": "2e-06",
+   "to": "1e-06",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "~openai/gpt-terra-latest",
+   "name": "OpenAI: GPT Terra Latest",
+   "field": "pout",
+   "from": "1.2e-05",
+   "to": "5e-06",
+   "pct": -58.3,
+   "direction": "down"
+  },
+  {
+   "id": "~openai/gpt-terra-latest",
+   "name": "OpenAI: GPT Terra Latest",
+   "field": "pcr",
+   "from": "2e-07",
+   "to": "5e-08",
+   "pct": -75.0,
+   "direction": "down"
+  },
+  {
+   "id": "~openai/gpt-terra-latest",
+   "name": "OpenAI: GPT Terra Latest",
+   "field": "pcw",
+   "from": "2.5e-06",
+   "to": "1.25e-06",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "4.13e-08",
+   "to": "2.14e-08",
+   "pct": -48.2,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "7.58e-08",
+   "to": "1.046e-07",
+   "pct": 38.0,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "2.14e-08",
+   "pct": -28.7,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 463,
+  "added": 4,
+  "removed": 7,
+  "price_changes": 43,
+  "drops": 16,
+  "hikes": 27
+ },
+ "baseline": "2026-10-26"
+}

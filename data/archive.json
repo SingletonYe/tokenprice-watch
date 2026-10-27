@@ -60,6 +60,18 @@
   "ci": 33.3
  },
  {
+  "id": "ibm-granite/granite-4.0-h-micro",
+  "name": "IBM: Granite 4.0 Micro",
+  "last_seen": "2026-10-26",
+  "ctx": 131000,
+  "pin": "1.7e-08",
+  "pout": "1.12e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": 5.1,
+  "ci": null
+ },
+ {
   "id": "microsoft/wizardlm-2-8x22b",
   "name": "WizardLM-2 8x22B",
   "last_seen": "2026-10-19",
@@ -82,6 +94,78 @@
   "pcw": null,
   "iq": 42.7,
   "ci": null
+ },
+ {
+  "id": "mistralai/codestral-2508:batch",
+  "name": "Mistral: Codestral 2508 (batch)",
+  "last_seen": "2026-10-26",
+  "ctx": 256000,
+  "pin": "1.5e-07",
+  "pout": "4.5e-07",
+  "pcr": "1.5e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "mistralai/ministral-8b-2512:batch",
+  "name": "Mistral: Ministral 3 8B 2512 (batch)",
+  "last_seen": "2026-10-26",
+  "ctx": 262144,
+  "pin": "7.5e-08",
+  "pout": "7.5e-08",
+  "pcr": "7.5e-09",
+  "pcw": null,
+  "iq": 5.5,
+  "ci": 9.7
+ },
+ {
+  "id": "mistralai/mistral-large-2512:batch",
+  "name": "Mistral: Mistral Large 3 2512 (batch)",
+  "last_seen": "2026-10-26",
+  "ctx": 262144,
+  "pin": "2.5e-07",
+  "pout": "7.5e-07",
+  "pcr": "2.5e-08",
+  "pcw": null,
+  "iq": 9.3,
+  "ci": 20.1
+ },
+ {
+  "id": "mistralai/mistral-medium-3.1:batch",
+  "name": "Mistral: Mistral Medium 3.1 (batch)",
+  "last_seen": "2026-10-26",
+  "ctx": 131072,
+  "pin": "2e-07",
+  "pout": "1e-06",
+  "pcr": "2e-08",
+  "pcw": null,
+  "iq": 9.2,
+  "ci": 20.5
+ },
+ {
+  "id": "mistralai/mistral-small-2603:batch",
+  "name": "Mistral: Mistral Small 4 (batch)",
+  "last_seen": "2026-10-26",
+  "ctx": 262144,
+  "pin": "7.5e-08",
+  "pout": "3e-07",
+  "pcr": "7.5e-09",
+  "pcw": null,
+  "iq": 11.3,
+  "ci": 26.6
+ },
+ {
+  "id": "nvidia/nemotron-3-super-120b-a12b:free",
+  "name": "NVIDIA: Nemotron 3 Super (free)",
+  "last_seen": "2026-10-26",
+  "ctx": 262144,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": 12.8,
+  "ci": 37.7
  },
  {
   "id": "openai/gpt-3.5-turbo",
