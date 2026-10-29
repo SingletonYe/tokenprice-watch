@@ -1,0 +1,324 @@
+{
+ "date": "2026-10-29",
+ "added": [
+  {
+   "id": "particle-ai/particle-1",
+   "name": "Particle AI: Particle-1"
+  }
+ ],
+ "removed": [
+  {
+   "id": "openai/gpt-4-turbo",
+   "name": "OpenAI: GPT-4 Turbo"
+  },
+  {
+   "id": "openai/o1",
+   "name": "OpenAI: o1"
+  },
+  {
+   "id": "openai/o1-pro",
+   "name": "OpenAI: o1-pro"
+  },
+  {
+   "id": "openai/o3-mini",
+   "name": "OpenAI: o3 Mini"
+  },
+  {
+   "id": "openai/o3-mini-high",
+   "name": "OpenAI: o3 Mini High"
+  },
+  {
+   "id": "openai/o4-mini",
+   "name": "OpenAI: o4 Mini"
+  },
+  {
+   "id": "openai/o4-mini-high",
+   "name": "OpenAI: o4 Mini High"
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-thinking",
+   "name": "Qwen: Qwen3 Next 80B A3B Thinking"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "1.4e-07",
+   "to": "4.5e-08",
+   "pct": -67.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "4.2e-07",
+   "to": "5e-07",
+   "pct": 19.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "4.2e-09",
+   "to": "6e-09",
+   "pct": 42.9,
+   "direction": "up"
+  },
+  {
+   "id": "ibm-granite/granite-4.2-8b",
+   "name": "IBM: Granite 4.2 8B",
+   "field": "pout",
+   "from": "2.5e-07",
+   "to": "1.5e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pin",
+   "from": "2e-08",
+   "to": "5e-08",
+   "pct": 150.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pout",
+   "from": "4e-08",
+   "to": "8e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pcr",
+   "from": null,
+   "to": "2.5e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pin",
+   "from": "2e-07",
+   "to": "2.39e-07",
+   "pct": 19.5,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pout",
+   "from": "2e-05",
+   "to": "1.08e-05",
+   "pct": -46.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pcr",
+   "from": "1.9e-07",
+   "to": "2.1e-07",
+   "pct": 10.5,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pin",
+   "from": "5.5e-07",
+   "to": "5e-07",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pout",
+   "from": "2.2e-06",
+   "to": "2e-06",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.6",
+   "name": "Z.ai: GLM 4.6",
+   "field": "pcr",
+   "from": "1.1e-07",
+   "to": "1e-07",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pin",
+   "from": "1.4e-08",
+   "to": "6e-09",
+   "pct": -57.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pcr",
+   "from": "1.3e-08",
+   "to": "5e-09",
+   "pct": -61.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "4.57e-08",
+   "pct": -69.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "7.42e-08",
+   "pct": -85.2,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "1.15e-08",
+   "to": "2.56e-08",
+   "pct": 122.6,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "1.14e-08",
+   "to": "2.54e-08",
+   "pct": 122.8,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "2.542e-07",
+   "to": "1.035e-07",
+   "pct": -59.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "2.5e-07",
+   "to": "1e-07",
+   "pct": -60.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "4.75e-08",
+   "to": "5.676e-08",
+   "pct": 19.5,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "1.568e-07",
+   "to": "1.7028e-07",
+   "pct": 8.6,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "2.8e-08",
+   "to": "1.806e-09",
+   "pct": -93.5,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.605e-07",
+   "to": "1.824e-07",
+   "pct": 13.6,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "8.94e-06",
+   "to": "9.3388e-06",
+   "pct": 4.5,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.6e-07",
+   "to": "1.8e-07",
+   "pct": 12.5,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "2.37e-08",
+   "to": "4.57e-08",
+   "pct": 92.8,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "1.324e-07",
+   "to": "7.42e-08",
+   "pct": -44.0,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "2.37e-08",
+   "to": "3e-08",
+   "pct": 26.6,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 457,
+  "added": 1,
+  "removed": 8,
+  "price_changes": 30,
+  "drops": 14,
+  "hikes": 16
+ },
+ "baseline": "2026-10-28"
+}
