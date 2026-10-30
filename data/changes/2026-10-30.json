@@ -1,0 +1,372 @@
+{
+ "date": "2026-10-30",
+ "added": [],
+ "removed": [
+  {
+   "id": "upstage/solar-pro-3",
+   "name": "Upstage: Solar Pro 3"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v3.2",
+   "name": "DeepSeek: DeepSeek V3.2",
+   "field": "pin",
+   "from": "2.8e-07",
+   "to": "2.6e-07",
+   "pct": -7.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v3.2",
+   "name": "DeepSeek: DeepSeek V3.2",
+   "field": "pout",
+   "from": "4.2e-07",
+   "to": "3.8e-07",
+   "pct": -9.5,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v3.2",
+   "name": "DeepSeek: DeepSeek V3.2",
+   "field": "pcr",
+   "from": "2.8e-08",
+   "to": "1.3e-07",
+   "pct": 364.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "8.94012e-07",
+   "to": "8.16234e-07",
+   "pct": -8.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.788024e-06",
+   "to": "1.632468e-06",
+   "pct": -8.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "7.4501e-08",
+   "to": "6.80195e-08",
+   "pct": -8.7,
+   "direction": "down"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pin",
+   "from": "1.36e-06",
+   "to": "7e-07",
+   "pct": -48.5,
+   "direction": "down"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pout",
+   "from": "4.18e-06",
+   "to": "2.1e-06",
+   "pct": -49.8,
+   "direction": "down"
+  },
+  {
+   "id": "mistralai/mistral-large-4-0",
+   "name": "Mistral: Mistral Large 4",
+   "field": "pcr",
+   "from": "1.4e-07",
+   "to": "7e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pin",
+   "from": "5.6e-07",
+   "to": "6e-07",
+   "pct": 7.1,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pout",
+   "from": "3.1e-06",
+   "to": "3.5e-06",
+   "pct": 12.9,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pin",
+   "from": "2.39e-07",
+   "to": "1.92e-07",
+   "pct": -19.7,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pout",
+   "from": "1.08e-05",
+   "to": "1.5e-05",
+   "pct": 38.9,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3",
+   "name": "MoonshotAI: Kimi K3",
+   "field": "pcr",
+   "from": "2.1e-07",
+   "to": "1.82e-07",
+   "pct": -13.3,
+   "direction": "down"
+  },
+  {
+   "id": "particle-ai/particle-1",
+   "name": "Particle AI: Particle-1",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "3e-09",
+   "pct": -90.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.6-27b",
+   "name": "Qwen: Qwen3.6 27B",
+   "field": "pin",
+   "from": "4.5e-07",
+   "to": "3.2e-07",
+   "pct": -28.9,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.6-27b",
+   "name": "Qwen: Qwen3.6 27B",
+   "field": "pout",
+   "from": "2.7e-06",
+   "to": "3.2e-06",
+   "pct": 18.5,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pin",
+   "from": "3.9e-08",
+   "to": "1.5e-07",
+   "pct": 284.6,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pout",
+   "from": "1.25e-06",
+   "to": "1.875e-06",
+   "pct": 50.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pcr",
+   "from": "3.9e-09",
+   "to": "3.75e-08",
+   "pct": 861.5,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.6v",
+   "name": "Z.ai: GLM 4.6V",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "5.5e-08",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pin",
+   "from": "6.99e-08",
+   "to": "8e-08",
+   "pct": 14.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "1.4e-06",
+   "to": "3.6e-06",
+   "pct": 157.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pcr",
+   "from": "6.89e-08",
+   "to": "7.6e-08",
+   "pct": 10.3,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "4.57e-08",
+   "to": "1.5e-07",
+   "pct": 228.2,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "7.42e-08",
+   "to": "5e-07",
+   "pct": 573.9,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "2.56e-08",
+   "to": "3.1e-08",
+   "pct": 21.1,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "1.8e-06",
+   "to": "2.7e-07",
+   "pct": -85.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "2.54e-08",
+   "to": "4e-09",
+   "pct": -84.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pout",
+   "from": "8e-06",
+   "to": "4e-06",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "5.676e-08",
+   "to": "4.86e-08",
+   "pct": -14.4,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "1.7028e-07",
+   "to": "3e-07",
+   "pct": 76.2,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "1.806e-09",
+   "to": "4.76e-08",
+   "pct": 2535.7,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.824e-07",
+   "to": "1.71e-07",
+   "pct": -6.2,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "9.3388e-06",
+   "to": "1.05572e-05",
+   "pct": 13.0,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.8e-07",
+   "to": "1.7e-07",
+   "pct": -5.6,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "4.57e-08",
+   "to": "1.97e-08",
+   "pct": -56.9,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "7.42e-08",
+   "to": "1.142e-07",
+   "pct": 53.9,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "1.97e-08",
+   "pct": -34.3,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 456,
+  "added": 0,
+  "removed": 1,
+  "price_changes": 39,
+  "drops": 20,
+  "hikes": 19
+ },
+ "baseline": "2026-10-29"
+}

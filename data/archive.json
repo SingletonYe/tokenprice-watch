@@ -310,5 +310,17 @@
   "pcw": null,
   "iq": null,
   "ci": null
+ },
+ {
+  "id": "upstage/solar-pro-3",
+  "name": "Upstage: Solar Pro 3",
+  "last_seen": "2026-10-29",
+  "ctx": 131072,
+  "pin": "1.5e-07",
+  "pout": "6e-07",
+  "pcr": "1.5e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": 16.2
  }
 ]
