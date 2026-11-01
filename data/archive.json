@@ -288,6 +288,54 @@
   "ci": null
  },
  {
+  "id": "poolside/laguna-s-2.1",
+  "name": "Poolside: Laguna S 2.1",
+  "last_seen": "2026-10-31",
+  "ctx": 1048576,
+  "pin": "9e-08",
+  "pout": "1.8e-07",
+  "pcr": "9e-09",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "poolside/laguna-s-2.1:free",
+  "name": "Poolside: Laguna S 2.1 (free)",
+  "last_seen": "2026-10-31",
+  "ctx": 262144,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "poolside/laguna-xs-2.1",
+  "name": "Poolside: Laguna XS 2.1",
+  "last_seen": "2026-10-31",
+  "ctx": 262144,
+  "pin": "6e-08",
+  "pout": "1.2e-07",
+  "pcr": "3e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "poolside/laguna-xs-2.1:free",
+  "name": "Poolside: Laguna XS 2.1 (free)",
+  "last_seen": "2026-10-31",
+  "ctx": 262144,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "qwen/qwen3-next-80b-a3b-thinking",
   "name": "Qwen: Qwen3 Next 80B A3B Thinking",
   "last_seen": "2026-10-28",
