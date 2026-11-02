@@ -156,6 +156,30 @@
   "ci": 26.6
  },
  {
+  "id": "nousresearch/hermes-3-llama-3.1-405b",
+  "name": "Nous: Hermes 3 405B Instruct",
+  "last_seen": "2026-11-01",
+  "ctx": 131072,
+  "pin": "1e-06",
+  "pout": "1e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "nousresearch/hermes-3-llama-3.1-70b",
+  "name": "Nous: Hermes 3 70B Instruct",
+  "last_seen": "2026-11-01",
+  "ctx": 131072,
+  "pin": "7e-07",
+  "pout": "7e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "nvidia/nemotron-3-super-120b-a12b:free",
   "name": "NVIDIA: Nemotron 3 Super (free)",
   "last_seen": "2026-10-26",

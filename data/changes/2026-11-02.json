@@ -1,0 +1,147 @@
+{
+ "date": "2026-11-02",
+ "added": [
+  {
+   "id": "z-ai/glm-5.3-flashx-legal",
+   "name": "Z.ai: GLM 5.3 FlashX Legal"
+  }
+ ],
+ "removed": [
+  {
+   "id": "nousresearch/hermes-3-llama-3.1-405b",
+   "name": "Nous: Hermes 3 405B Instruct"
+  },
+  {
+   "id": "nousresearch/hermes-3-llama-3.1-70b",
+   "name": "Nous: Hermes 3 70B Instruct"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "6.75e-08",
+   "to": "8.5e-08",
+   "pct": 25.9,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.25e-07",
+   "to": "2.54e-07",
+   "pct": 12.9,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "3.75e-08",
+   "to": "4.2e-08",
+   "pct": 12.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.2-3b-instruct",
+   "name": "Meta: Llama 3.2 3B Instruct",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "5.09e-08",
+   "pct": 1.8,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.2-3b-instruct",
+   "name": "Meta: Llama 3.2 3B Instruct",
+   "field": "pout",
+   "from": "3.3e-07",
+   "to": "3.35e-07",
+   "pct": 1.5,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "7.5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "3e-07",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "1.5e-08",
+   "to": "7.5e-09",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pin",
+   "from": "1.7e-08",
+   "to": "1.5e-07",
+   "pct": 782.4,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pout",
+   "from": "6.1e-08",
+   "to": "6e-07",
+   "pct": 883.6,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pcr",
+   "from": null,
+   "to": "7.5e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flashx",
+   "name": "Z.ai: GLM 5.3 FlashX",
+   "field": "pcr",
+   "from": "9e-08",
+   "to": "7.5e-08",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "4.34e-08",
+   "to": "5.9e-08",
+   "pct": 35.9,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 451,
+  "added": 1,
+  "removed": 2,
+  "price_changes": 13,
+  "drops": 4,
+  "hikes": 9
+ },
+ "baseline": "2026-11-01"
+}
