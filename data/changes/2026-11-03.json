@@ -1,0 +1,295 @@
+{
+ "date": "2026-11-03",
+ "added": [],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "1.19e-07",
+   "to": "5.9e-08",
+   "pct": -50.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pout",
+   "from": "2.38e-07",
+   "to": "3e-07",
+   "pct": 26.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "2.38e-08",
+   "to": "3.5e-08",
+   "pct": 47.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "1.2e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "8.5e-08",
+   "to": "8.6e-08",
+   "pct": 1.2,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.54e-07",
+   "to": "2.57e-07",
+   "pct": 1.2,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "4.2e-08",
+   "to": "4.3e-08",
+   "pct": 2.4,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.1-70b-instruct",
+   "name": "Meta: Llama 3.1 70B Instruct",
+   "field": "pin",
+   "from": "4e-07",
+   "to": "7.2e-07",
+   "pct": 80.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.1-70b-instruct",
+   "name": "Meta: Llama 3.1 70B Instruct",
+   "field": "pout",
+   "from": "4e-07",
+   "to": "7.2e-07",
+   "pct": 80.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "2e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pout",
+   "from": "3.2e-07",
+   "to": "5.2e-07",
+   "pct": 62.5,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pcr",
+   "from": null,
+   "to": "1e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1.5e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "6e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "7.5e-09",
+   "to": "1.5e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3-coder-30b-a3b-instruct",
+   "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+   "field": "pin",
+   "from": "7e-08",
+   "to": "1.5e-07",
+   "pct": 114.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3-coder-30b-a3b-instruct",
+   "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+   "field": "pout",
+   "from": "2.8e-07",
+   "to": "6e-07",
+   "pct": 114.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-instruct",
+   "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+   "field": "pin",
+   "from": "9e-08",
+   "to": "1e-07",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-instruct",
+   "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+   "field": "pcr",
+   "from": null,
+   "to": "7e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "2.85e-08",
+   "to": "3.13e-08",
+   "pct": 9.8,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "9.23e-08",
+   "to": "8.46e-08",
+   "pct": -8.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pcr",
+   "from": "2.85e-08",
+   "to": "3e-08",
+   "pct": 5.3,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "3.15e-07",
+   "pct": -37.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "5e-09",
+   "to": "6e-09",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.495e-07",
+   "to": "1.653e-07",
+   "pct": 10.6,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "7.15e-06",
+   "to": "1.01427e-05",
+   "pct": 41.9,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "7.475e-08",
+   "to": "1.6e-07",
+   "pct": 114.0,
+   "direction": "up"
+  },
+  {
+   "id": "~x-ai/grok-latest",
+   "name": "xAI: Grok Latest",
+   "field": "pcw",
+   "from": null,
+   "to": "0",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "2.85e-08",
+   "to": "3.13e-08",
+   "pct": 9.8,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "9.23e-08",
+   "to": "8.46e-08",
+   "pct": -8.3,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "2.85e-08",
+   "to": "3e-08",
+   "pct": 5.3,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 451,
+  "added": 0,
+  "removed": 0,
+  "price_changes": 31,
+  "drops": 4,
+  "hikes": 27
+ },
+ "baseline": "2026-11-02"
+}
