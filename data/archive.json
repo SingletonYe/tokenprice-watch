@@ -384,6 +384,30 @@
   "ci": null
  },
  {
+  "id": "thinkingmachines/inkling-small:free",
+  "name": "Thinking Machines: Inkling Small (free)",
+  "last_seen": "2026-11-03",
+  "ctx": 1048576,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": 12.9,
+  "ci": 52.9
+ },
+ {
+  "id": "thinkingmachines/inkling:free",
+  "name": "Thinking Machines: Inkling (free)",
+  "last_seen": "2026-11-03",
+  "ctx": 1048576,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": 12.5,
+  "ci": 52.1
+ },
+ {
   "id": "upstage/solar-pro-3",
   "name": "Upstage: Solar Pro 3",
   "last_seen": "2026-10-29",
