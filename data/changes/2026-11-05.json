@@ -1,0 +1,397 @@
+{
+ "date": "2026-11-05",
+ "added": [
+  {
+   "id": "inclusionai/ling-3.0-tiny",
+   "name": "inclusionAI: Ling 3.0 Tiny"
+  },
+  {
+   "id": "openrouter/auto-code",
+   "name": "Auto Code"
+  },
+  {
+   "id": "ricursiveai/ripple-65b-preview",
+   "name": "ricursiveAI/Ripple-65B-Preview"
+  }
+ ],
+ "removed": [
+  {
+   "id": "minimax/minimax-01",
+   "name": "MiniMax: MiniMax-01"
+  },
+  {
+   "id": "minimax/minimax-m2",
+   "name": "MiniMax: MiniMax M2"
+  },
+  {
+   "id": "minimax/minimax-m2-her",
+   "name": "MiniMax: MiniMax M2-her"
+  },
+  {
+   "id": "minimax/minimax-m2.1",
+   "name": "MiniMax: MiniMax M2.1"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "5.9e-08",
+   "to": "5.4e-08",
+   "pct": -8.5,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pin",
+   "from": "1.15e-07",
+   "to": "1.03e-07",
+   "pct": -10.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pout",
+   "from": "4.6e-06",
+   "to": "4.11e-06",
+   "pct": -10.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pcr",
+   "from": "1.1e-07",
+   "to": "9.8e-08",
+   "pct": -10.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "1.12e-07",
+   "pct": 124.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pout",
+   "from": "1.5e-07",
+   "to": "3.36e-07",
+   "pct": 124.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pcr",
+   "from": "4e-09",
+   "to": "3.36e-09",
+   "pct": -16.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "7.4e-08",
+   "to": "1.3e-08",
+   "pct": -82.4,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.22e-07",
+   "to": "4e-08",
+   "pct": -82.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "3.7e-08",
+   "to": "7e-09",
+   "pct": -81.1,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "2e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pout",
+   "from": "3.2e-07",
+   "to": "5.2e-07",
+   "pct": 62.5,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pcr",
+   "from": null,
+   "to": "1e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-4-maverick",
+   "name": "Meta: Llama 4 Maverick",
+   "field": "pin",
+   "from": "1.875e-07",
+   "to": "3.5e-07",
+   "pct": 86.7,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-4-maverick",
+   "name": "Meta: Llama 4 Maverick",
+   "field": "pout",
+   "from": "6.525e-07",
+   "to": "1e-06",
+   "pct": 53.3,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-4-maverick",
+   "name": "Meta: Llama 4 Maverick",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "1.7e-07",
+   "pct": 240.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "2.1e-07",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "8.4e-07",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pcr",
+   "from": "6e-08",
+   "to": "4.2e-08",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": "1.6e-07",
+   "pct": 6.7,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-instruct",
+   "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "9e-08",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3-next-80b-a3b-instruct",
+   "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+   "field": "pcr",
+   "from": "7e-08",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pin",
+   "from": "8e-08",
+   "to": "6.99e-08",
+   "pct": -12.6,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "3.6e-06",
+   "to": "1.4e-06",
+   "pct": -61.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pcr",
+   "from": "7.6e-08",
+   "to": "6.89e-08",
+   "pct": -9.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "2.69e-08",
+   "to": "1.5e-07",
+   "pct": 457.6,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "9.96e-08",
+   "to": "5e-07",
+   "pct": 402.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pcr",
+   "from": "2.69e-08",
+   "to": "3e-08",
+   "pct": 11.5,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "3.2e-08",
+   "to": "6e-09",
+   "pct": -81.2,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "1.035e-07",
+   "to": "9.27e-08",
+   "pct": -10.4,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "9.27e-08",
+   "pct": -7.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "5.9e-08",
+   "to": "5.368e-08",
+   "pct": -9.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "1.6104e-07",
+   "pct": -46.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "3.5e-08",
+   "to": "1.708e-09",
+   "pct": -95.1,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.824e-07",
+   "to": "1.577e-07",
+   "pct": -13.5,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.8e-07",
+   "to": "1.5e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "2.69e-08",
+   "to": "2.85e-08",
+   "pct": 5.9,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "9.96e-08",
+   "to": "9.23e-08",
+   "pct": -7.3,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "2.69e-08",
+   "to": "2.85e-08",
+   "pct": 5.9,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 452,
+  "added": 3,
+  "removed": 4,
+  "price_changes": 39,
+  "drops": 24,
+  "hikes": 15
+ },
+ "baseline": "2026-11-04"
+}
