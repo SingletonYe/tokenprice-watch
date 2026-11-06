@@ -1,0 +1,372 @@
+{
+ "date": "2026-11-06",
+ "added": [
+  {
+   "id": "google/gemini-omni-1.1-flash",
+   "name": "Google: Gemini Omni 1.1 Flash"
+  },
+  {
+   "id": "google/gemini-omni-1.2-flash",
+   "name": "Google: Gemini Omni 1.2 Flash"
+  }
+ ],
+ "removed": [
+  {
+   "id": "nvidia/nemotron-3.5-content-safety:free",
+   "name": "NVIDIA: Nemotron 3.5 Content Safety (free)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-chat",
+   "name": "DeepSeek: DeepSeek V3",
+   "field": "pin",
+   "from": "2.574e-07",
+   "to": "3.2e-07",
+   "pct": 24.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-chat",
+   "name": "DeepSeek: DeepSeek V3",
+   "field": "pout",
+   "from": "1.0287e-06",
+   "to": "8.9e-07",
+   "pct": -13.5,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "5.4e-08",
+   "to": "5.66e-08",
+   "pct": 4.8,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pin",
+   "from": "2.156e-07",
+   "to": "4.4e-07",
+   "pct": 104.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pout",
+   "from": "6.468e-07",
+   "to": "1.32e-06",
+   "pct": 104.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pcr",
+   "from": "6.86e-09",
+   "to": "1.4e-08",
+   "pct": 104.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "1.6e-06",
+   "to": "8.88966e-07",
+   "pct": -44.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "3.2e-06",
+   "to": "1.777932e-06",
+   "pct": -44.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "1.35e-07",
+   "to": "7.40805e-08",
+   "pct": -45.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pin",
+   "from": "1.03e-07",
+   "to": "1.165e-07",
+   "pct": 13.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pout",
+   "from": "4.11e-06",
+   "to": "4.66e-06",
+   "pct": 13.4,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro-0813",
+   "name": "DeepSeek: DeepSeek V4 Pro 0813",
+   "field": "pcr",
+   "from": "9.8e-08",
+   "to": "1.11e-07",
+   "pct": 13.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "4.5e-08",
+   "to": "5.1e-08",
+   "pct": 13.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "5.67e-07",
+   "pct": 13.4,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "1.3e-08",
+   "to": "9e-08",
+   "pct": 592.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "4e-08",
+   "to": "3e-07",
+   "pct": 650.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "7e-09",
+   "to": "5e-08",
+   "pct": 614.3,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pin",
+   "from": "2e-07",
+   "to": "5.9e-07",
+   "pct": 195.0,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pout",
+   "from": "5.2e-07",
+   "to": "7.9e-07",
+   "pct": 51.9,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "2.95e-07",
+   "pct": 195.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pin",
+   "from": "5e-07",
+   "to": "5.32e-07",
+   "pct": 6.4,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pout",
+   "from": "2.5e-06",
+   "to": "3.325e-06",
+   "pct": 33.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": "2.09e-07",
+   "pct": 39.3,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "7.5e-08",
+   "pct": -75.0,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pout",
+   "from": "2.4e-06",
+   "to": "4e-07",
+   "pct": -83.3,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "NVIDIA: Nemotron 3 Super",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "field": "pin",
+   "from": "2.5e-07",
+   "to": "3e-07",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "name": "Reflection: Beam 1.0 501B A23B",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "4e-08",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "9.27e-08",
+   "to": "9.99e-08",
+   "pct": 7.8,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "9.27e-08",
+   "to": "9.99e-08",
+   "pct": 7.8,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "5.368e-08",
+   "to": "5.632e-08",
+   "pct": 4.9,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "1.6104e-07",
+   "to": "1.6896e-07",
+   "pct": 4.9,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "1.708e-09",
+   "to": "1.792e-09",
+   "pct": 4.9,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.577e-07",
+   "to": "1.719e-07",
+   "pct": 9.0,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "9.3388e-06",
+   "to": "9.7471e-06",
+   "pct": 4.4,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": "1.7e-07",
+   "pct": 13.3,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "2.85e-08",
+   "to": "2.84e-08",
+   "pct": -0.4,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "2.85e-08",
+   "to": "2.84e-08",
+   "pct": -0.4,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 453,
+  "added": 2,
+  "removed": 1,
+  "price_changes": 38,
+  "drops": 9,
+  "hikes": 29
+ },
+ "baseline": "2026-11-05"
+}

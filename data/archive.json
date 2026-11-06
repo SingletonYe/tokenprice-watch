@@ -240,6 +240,18 @@
   "ci": 37.7
  },
  {
+  "id": "nvidia/nemotron-3.5-content-safety:free",
+  "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+  "last_seen": "2026-11-05",
+  "ctx": 128000,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "openai/gpt-3.5-turbo",
   "name": "OpenAI: GPT-3.5 Turbo",
   "last_seen": "2026-10-24",
