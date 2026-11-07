@@ -1,0 +1,306 @@
+{
+ "date": "2026-11-07",
+ "added": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731:batch",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)"
+  },
+  {
+   "id": "liquid/lfm-3-1.7b",
+   "name": "LiquidAI: LFM3-1.7B"
+  },
+  {
+   "id": "liquid/lfm-3-1.7b:free",
+   "name": "LiquidAI: LFM3-1.7B (free)"
+  },
+  {
+   "id": "meta/muse-glimmer-30b:batch",
+   "name": "Meta: Muse Glimmer 30B (batch)"
+  },
+  {
+   "id": "minimax/minimax-m3:batch",
+   "name": "MiniMax: MiniMax M3 (batch)"
+  },
+  {
+   "id": "qwen/qwen3.8-27b:batch",
+   "name": "Qwen: Qwen3.8 27B (batch)"
+  },
+  {
+   "id": "thinkingmachines/inkling-small:batch",
+   "name": "Thinking Machines: Inkling Small (batch)"
+  }
+ ],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "anthracite-org/magnum-v4-72b",
+   "name": "Magnum v4 72B",
+   "field": "pcr",
+   "from": null,
+   "to": "2.5e-06",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "5.66e-08",
+   "to": "4.74e-08",
+   "pct": -16.3,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "8.88966e-07",
+   "to": "7.17924e-07",
+   "pct": -19.2,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.777932e-06",
+   "to": "1.435848e-06",
+   "pct": -19.2,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "7.40805e-08",
+   "to": "5.9827e-08",
+   "pct": -19.2,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "9e-08",
+   "to": "6.75e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "2.25e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "3.75e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "inclusionai/ling-3.1-flash",
+   "name": "inclusionAI: Ling 3.1 Flash",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "4.5e-08",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "inclusionai/ling-3.1-flash",
+   "name": "inclusionAI: Ling 3.1 Flash",
+   "field": "pout",
+   "from": "2.25e-07",
+   "to": "1.35e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "inclusionai/ling-3.1-flash",
+   "name": "inclusionAI: Ling 3.1 Flash",
+   "field": "pcr",
+   "from": "1.5e-08",
+   "to": "9e-09",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "mancer/weaver",
+   "name": "Mancer: Weaver (alpha)",
+   "field": "pcr",
+   "from": null,
+   "to": "4e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pin",
+   "from": "2.7e-07",
+   "to": "3e-07",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pout",
+   "from": "9.5e-07",
+   "to": "1.2e-06",
+   "pct": 26.3,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "6e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pin",
+   "from": "5.32e-07",
+   "to": "5e-07",
+   "pct": -6.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pout",
+   "from": "3.325e-06",
+   "to": "2.5e-06",
+   "pct": -24.8,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pcr",
+   "from": "2.09e-07",
+   "to": "1.5e-07",
+   "pct": -28.2,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "1.7e-08",
+   "pct": -88.7,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "6.4e-08",
+   "pct": -89.3,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pcr",
+   "from": "7.5e-08",
+   "to": "1.6e-08",
+   "pct": -78.7,
+   "direction": "down"
+  },
+  {
+   "id": "undi95/remm-slerp-l2-13b",
+   "name": "ReMM SLERP 13B",
+   "field": "pcr",
+   "from": null,
+   "to": "3.5e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pin",
+   "from": "5.632e-08",
+   "to": "4.74e-08",
+   "pct": -15.8,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pout",
+   "from": "1.6896e-07",
+   "to": "3e-07",
+   "pct": 77.6,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-v4-flash-latest",
+   "name": "DeepSeek: DeepSeek V4 Flash Latest",
+   "field": "pcr",
+   "from": "1.792e-09",
+   "to": "3.5e-08",
+   "pct": 1853.1,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.719e-07",
+   "to": "1.548e-07",
+   "pct": -9.9,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.7e-07",
+   "to": "1.5e-07",
+   "pct": -11.8,
+   "direction": "down"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "2.84e-08",
+   "to": "2.85e-08",
+   "pct": 0.4,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pcr",
+   "from": "2.84e-08",
+   "to": "2.85e-08",
+   "pct": 0.4,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 460,
+  "added": 7,
+  "removed": 0,
+  "price_changes": 29,
+  "drops": 19,
+  "hikes": 10
+ },
+ "baseline": "2026-11-06"
+}
