@@ -72,6 +72,42 @@
   "ci": null
  },
  {
+  "id": "inception/mercury-2",
+  "name": "Inception: Mercury 2",
+  "last_seen": "2026-11-07",
+  "ctx": 128000,
+  "pin": "2.5e-07",
+  "pout": "7.5e-07",
+  "pcr": "2.5e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": 31.1
+ },
+ {
+  "id": "inception/mercury-2.5",
+  "name": "Inception: Mercury 2.5",
+  "last_seen": "2026-11-07",
+  "ctx": 260000,
+  "pin": "4e-08",
+  "pout": "1.5e-07",
+  "pcr": "4e-09",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "inception/mercury-3",
+  "name": "Inception: Mercury 3",
+  "last_seen": "2026-11-07",
+  "ctx": 1000000,
+  "pin": "1e-07",
+  "pout": "3.5e-07",
+  "pcr": "1e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "microsoft/wizardlm-2-8x22b",
   "name": "WizardLM-2 8x22B",
   "last_seen": "2026-10-19",
