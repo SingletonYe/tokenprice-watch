@@ -1,0 +1,431 @@
+{
+ "date": "2026-11-09",
+ "added": [
+  {
+   "id": "qwen/qwen3.8-max-0902:batch",
+   "name": "Qwen: Qwen3.8 Max (0902) (batch)"
+  }
+ ],
+ "removed": [
+  {
+   "id": "minimax/minimax-m1",
+   "name": "MiniMax: MiniMax M1"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "2.41338e-07",
+   "to": "8.94012e-07",
+   "pct": 270.4,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "4.82676e-07",
+   "to": "1.788024e-06",
+   "pct": 270.4,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "2.01115e-08",
+   "to": "7.4501e-08",
+   "pct": 270.4,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-3-27b-it",
+   "name": "Google: Gemma 3 27B",
+   "field": "pout",
+   "from": "3.5e-07",
+   "to": "4.5e-07",
+   "pct": 28.6,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "6.75e-08",
+   "to": "9e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.25e-07",
+   "to": "3e-07",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "3.75e-08",
+   "to": "5e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "2e-08",
+   "pct": -60.0,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pout",
+   "from": "8e-08",
+   "to": "4e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.1-8b-instruct",
+   "name": "Meta: Llama 3.1 8B Instruct",
+   "field": "pcr",
+   "from": "2.5e-08",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "7.5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "3e-07",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "1.5e-08",
+   "to": "7.5e-09",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "mistralai/mistral-small-3.2-24b-instruct",
+   "name": "Mistral: Mistral Small 3.2 24B",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1e-07",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "mistralai/mistral-small-3.2-24b-instruct",
+   "name": "Mistral: Mistral Small 3.2 24B",
+   "field": "pout",
+   "from": "2e-07",
+   "to": "3e-07",
+   "pct": 50.0,
+   "direction": "up"
+  },
+  {
+   "id": "mistralai/mistral-small-3.2-24b-instruct",
+   "name": "Mistral: Mistral Small 3.2 24B",
+   "field": "pcr",
+   "from": null,
+   "to": "1e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3:batch",
+   "name": "MoonshotAI: Kimi K3 (batch)",
+   "field": "pin",
+   "from": "9.17e-07",
+   "to": "8.83e-07",
+   "pct": -3.7,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3:batch",
+   "name": "MoonshotAI: Kimi K3 (batch)",
+   "field": "pcr",
+   "from": "2.26e-07",
+   "to": "2.18e-07",
+   "pct": -3.5,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pin",
+   "from": "2.3e-08",
+   "to": "1.5e-07",
+   "pct": 552.2,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pout",
+   "from": "8.4e-08",
+   "to": "6e-07",
+   "pct": 614.3,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-120b",
+   "name": "OpenAI: gpt-oss-120b",
+   "field": "pcr",
+   "from": "2e-08",
+   "to": "7.5e-08",
+   "pct": 275.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pin",
+   "from": "5e-07",
+   "to": "6e-07",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pcr",
+   "from": "3e-07",
+   "to": "1.2e-07",
+   "pct": -60.0,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pin",
+   "from": "1.32e-07",
+   "to": "8.25e-08",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pout",
+   "from": "5.28e-07",
+   "to": "3.3e-07",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pcr",
+   "from": "3.3e-08",
+   "to": "2.0625e-08",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pin",
+   "from": "8.34e-07",
+   "to": "7.506e-07",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pout",
+   "from": "2.501e-06",
+   "to": "2.2509e-06",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pcr",
+   "from": "4.2e-08",
+   "to": "3.78e-08",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pin",
+   "from": "1.3e-07",
+   "to": "2e-07",
+   "pct": 53.8,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pout",
+   "from": "8.5e-07",
+   "to": "1.1e-06",
+   "pct": 29.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pcr",
+   "from": "2.5e-08",
+   "to": "3e-08",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pin",
+   "from": "6e-09",
+   "to": "7.5e-09",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pin",
+   "from": "3.7e-07",
+   "to": "6.23e-07",
+   "pct": 68.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pout",
+   "from": "1.5e-06",
+   "to": "1.271e-06",
+   "pct": -15.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pcr",
+   "from": "1.25e-07",
+   "to": "2.1e-07",
+   "pct": 68.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "4.3e-08",
+   "pct": -14.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pout",
+   "from": "1.8e-07",
+   "to": "8.7e-08",
+   "pct": -51.7,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pcr",
+   "from": "1e-08",
+   "to": "1.8e-08",
+   "pct": 80.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pin",
+   "from": "3.7e-07",
+   "to": "4.5e-07",
+   "pct": 21.6,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pout",
+   "from": "1.5e-06",
+   "to": "2e-06",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pcr",
+   "from": "1.25e-07",
+   "to": "1e-07",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.605e-07",
+   "to": "1.539e-07",
+   "pct": -4.1,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "9.3388e-06",
+   "to": "1.01489e-05",
+   "pct": 8.7,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.6e-07",
+   "to": "1.5e-07",
+   "pct": -6.3,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 461,
+  "added": 1,
+  "removed": 1,
+  "price_changes": 45,
+  "drops": 20,
+  "hikes": 25
+ },
+ "baseline": "2026-11-08"
+}

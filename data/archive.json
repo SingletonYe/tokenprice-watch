@@ -132,6 +132,18 @@
   "ci": null
  },
  {
+  "id": "minimax/minimax-m1",
+  "name": "MiniMax: MiniMax M1",
+  "last_seen": "2026-11-08",
+  "ctx": 1000000,
+  "pin": "5.5e-07",
+  "pout": "2.2e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "minimax/minimax-m2",
   "name": "MiniMax: MiniMax M2",
   "last_seen": "2026-11-04",

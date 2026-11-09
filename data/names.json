@@ -402,6 +402,7 @@
  "qwen/qwen3.8-27b:batch": "Qwen: Qwen3.8 27B (batch)",
  "qwen/qwen3.8-flash": "Qwen: Qwen3.8 Flash",
  "qwen/qwen3.8-max-0902": "Qwen: Qwen3.8 Max (0902)",
+ "qwen/qwen3.8-max-0902:batch": "Qwen: Qwen3.8 Max (0902) (batch)",
  "qwen/qwen3.8-max-prime": "Qwen: Qwen3.8 Max Prime",
  "qwen/qwen3.8-omni-flash": "Qwen: Qwen3.8 Omni Flash",
  "recursive/flint-v1.0:free": "Recursive: Flint (free)",
