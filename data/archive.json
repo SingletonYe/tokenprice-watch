@@ -492,6 +492,18 @@
   "ci": null
  },
  {
+  "id": "stealth/crouton-alpha",
+  "name": "Crouton Alpha",
+  "last_seen": "2026-11-09",
+  "ctx": 1048576,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "thinkingmachines/inkling-small:free",
   "name": "Thinking Machines: Inkling Small (free)",
   "last_seen": "2026-11-03",

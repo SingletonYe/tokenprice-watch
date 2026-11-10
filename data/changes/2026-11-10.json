@@ -1,0 +1,483 @@
+{
+ "date": "2026-11-10",
+ "added": [
+  {
+   "id": "anthropic/claude-fable-5.2",
+   "name": "Anthropic: Claude Fable 5.2"
+  },
+  {
+   "id": "anthropic/claude-fable-5.2:batch",
+   "name": "Anthropic: Claude Fable 5.2 (batch)"
+  },
+  {
+   "id": "meta/muse-ember",
+   "name": "Meta: Muse Ember"
+  },
+  {
+   "id": "nex-agi/nex-n2.6",
+   "name": "Nex AGI: Nex-N2.6"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-small:free",
+   "name": "Thinking Machines: Inkling 2 Small (free)"
+  }
+ ],
+ "removed": [
+  {
+   "id": "stealth/crouton-alpha",
+   "name": "Crouton Alpha"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "8.94012e-07",
+   "to": "9.5526e-07",
+   "pct": 6.9,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.788024e-06",
+   "to": "1.91052e-06",
+   "pct": 6.9,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "7.4501e-08",
+   "to": "7.9605e-08",
+   "pct": 6.9,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "5.1e-08",
+   "to": "3e-07",
+   "pct": 488.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "5.67e-07",
+   "to": "1.2e-06",
+   "pct": 111.6,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "1.8e-08",
+   "to": "6e-09",
+   "pct": -66.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pin",
+   "from": "1.1e-08",
+   "to": "1.12e-07",
+   "pct": 918.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pout",
+   "from": "2e-07",
+   "to": "3.36e-07",
+   "pct": 68.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+   "field": "pcr",
+   "from": "2e-09",
+   "to": "3.36e-09",
+   "pct": 68.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "9e-08",
+   "to": "8e-08",
+   "pct": -11.1,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "1e-07",
+   "pct": -66.7,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "4.6e-08",
+   "pct": -8.0,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pin",
+   "from": "5.9e-07",
+   "to": "7.1e-07",
+   "pct": 20.3,
+   "direction": "up"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pout",
+   "from": "7.9e-07",
+   "to": "7.1e-07",
+   "pct": -10.1,
+   "direction": "down"
+  },
+  {
+   "id": "meta-llama/llama-3.3-70b-instruct",
+   "name": "Meta: Llama 3.3 70B Instruct",
+   "field": "pcr",
+   "from": "2.95e-07",
+   "to": "7.1e-07",
+   "pct": 140.7,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1.5e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "6e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "7.5e-09",
+   "to": "1.5e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3:batch",
+   "name": "MoonshotAI: Kimi K3 (batch)",
+   "field": "pin",
+   "from": "8.83e-07",
+   "to": "2.28e-06",
+   "pct": 158.2,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3:batch",
+   "name": "MoonshotAI: Kimi K3 (batch)",
+   "field": "pout",
+   "from": "6e-06",
+   "to": "1.14e-05",
+   "pct": 90.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3:batch",
+   "name": "MoonshotAI: Kimi K3 (batch)",
+   "field": "pcr",
+   "from": "2.18e-07",
+   "to": "2.28e-07",
+   "pct": 4.6,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "4.7e-07",
+   "pct": -6.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3-14b",
+   "name": "Qwen: Qwen3 14B",
+   "field": "pin",
+   "from": "1.2e-07",
+   "to": "1e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3-14b",
+   "name": "Qwen: Qwen3 14B",
+   "field": "pout",
+   "from": "2.4e-07",
+   "to": "2.2e-07",
+   "pct": -8.3,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pin",
+   "from": "8.25e-08",
+   "to": "1.32e-07",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pout",
+   "from": "3.3e-07",
+   "to": "5.28e-07",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pcr",
+   "from": "2.0625e-08",
+   "to": "3.3e-08",
+   "pct": 60.0,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pin",
+   "from": "7.506e-07",
+   "to": "8.34e-07",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pout",
+   "from": "2.2509e-06",
+   "to": "2.501e-06",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy4-preview",
+   "name": "Tencent: Hy4 preview",
+   "field": "pcr",
+   "from": "3.78e-08",
+   "to": "4.2e-08",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pin",
+   "from": "7.5e-09",
+   "to": "6.2e-09",
+   "pct": -17.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pcr",
+   "from": "5e-09",
+   "to": "5.2e-09",
+   "pct": 4.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pin",
+   "from": "6.23e-07",
+   "to": "5.27e-07",
+   "pct": -15.4,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pout",
+   "from": "1.271e-06",
+   "to": "1.075e-06",
+   "pct": -15.4,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pcr",
+   "from": "2.1e-07",
+   "to": "1.78e-07",
+   "pct": -15.2,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "3.35e-08",
+   "to": "3.99e-08",
+   "pct": 19.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "8.3e-08",
+   "to": "7.84e-08",
+   "pct": -5.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pin",
+   "from": "4.3e-08",
+   "to": "3.3e-08",
+   "pct": -23.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pout",
+   "from": "8.7e-08",
+   "to": "6.1e-08",
+   "pct": -29.9,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pcr",
+   "from": "1.8e-08",
+   "to": "1.4e-08",
+   "pct": -22.2,
+   "direction": "down"
+  },
+  {
+   "id": "~anthropic/claude-fable-latest",
+   "name": "Anthropic: Claude Fable Latest",
+   "field": "pin",
+   "from": "1e-05",
+   "to": "8e-06",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~anthropic/claude-fable-latest",
+   "name": "Anthropic: Claude Fable Latest",
+   "field": "pout",
+   "from": "5e-05",
+   "to": "4e-05",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~anthropic/claude-fable-latest",
+   "name": "Anthropic: Claude Fable Latest",
+   "field": "pcr",
+   "from": "2.5e-07",
+   "to": "2e-07",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~anthropic/claude-fable-latest",
+   "name": "Anthropic: Claude Fable Latest",
+   "field": "pcw",
+   "from": "1.25e-05",
+   "to": "1e-05",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.539e-07",
+   "to": "1.824e-07",
+   "pct": 18.5,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "1.01489e-05",
+   "to": "9.3388e-06",
+   "pct": -8.0,
+   "direction": "down"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": "1.8e-07",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pin",
+   "from": "3.35e-08",
+   "to": "3.99e-08",
+   "pct": 19.1,
+   "direction": "up"
+  },
+  {
+   "id": "~z-ai/glm-flash-latest",
+   "name": "Z.ai: GLM Flash Latest",
+   "field": "pout",
+   "from": "8.3e-08",
+   "to": "7.84e-08",
+   "pct": -5.5,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 465,
+  "added": 5,
+  "removed": 1,
+  "price_changes": 49,
+  "drops": 22,
+  "hikes": 27
+ },
+ "baseline": "2026-11-09"
+}
