@@ -1,0 +1,296 @@
+{
+ "date": "2026-11-11",
+ "added": [
+  {
+   "id": "baidu/ernie-5.5-flash-preview:free",
+   "name": "Baidu: ERNIE-5.5-Flash-Preview (free)"
+  },
+  {
+   "id": "baidu/ernie-light-dt-1.0-intl",
+   "name": "Baidu: ERNIE-Light-DT-1.0"
+  },
+  {
+   "id": "google/gemini-4-carbon",
+   "name": "Google: Gemini 4 Carbon"
+  },
+  {
+   "id": "google/gemini-4-carbon:batch",
+   "name": "Google: Gemini 4 Carbon (batch)"
+  },
+  {
+   "id": "kt/midm-k-3.0-pro",
+   "name": "KT: Mi:dm K 3.0 Pro"
+  },
+  {
+   "id": "motif-technologies/motif-3",
+   "name": "Motif Technologies: Motif 3"
+  }
+ ],
+ "removed": [
+  {
+   "id": "bytedance-seed/seed-1.6",
+   "name": "ByteDance Seed: Seed 1.6"
+  },
+  {
+   "id": "bytedance-seed/seed-1.6-flash",
+   "name": "ByteDance Seed: Seed 1.6 Flash"
+  },
+  {
+   "id": "bytedance-seed/seed-2.0-code",
+   "name": "ByteDance Seed: Seed-2.0-Code"
+  },
+  {
+   "id": "qwen/qwen-2.5-7b-instruct",
+   "name": "Qwen: Qwen2.5 7B Instruct"
+  },
+  {
+   "id": "xingchen-agi/xing4.0-29b-a4b:free",
+   "name": "XingChen: Xing4.0 29B A4B (free)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pin",
+   "from": "9.1e-08",
+   "to": "9e-08",
+   "pct": -1.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pout",
+   "from": "1.82e-07",
+   "to": "1.8e-07",
+   "pct": -1.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek: DeepSeek V4 Flash 0423",
+   "field": "pcr",
+   "from": "1.82e-08",
+   "to": "1.8e-08",
+   "pct": -1.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "9.5526e-07",
+   "to": "8.88966e-07",
+   "pct": -6.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.91052e-06",
+   "to": "1.777932e-06",
+   "pct": -6.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "7.9605e-08",
+   "to": "7.40805e-08",
+   "pct": -6.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "5.1e-08",
+   "pct": -83.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "5.67e-07",
+   "pct": -52.8,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "1.8e-08",
+   "pct": 200.0,
+   "direction": "up"
+  },
+  {
+   "id": "mancer/weaver",
+   "name": "Mancer: Weaver (alpha)",
+   "field": "pin",
+   "from": "4e-07",
+   "to": "3e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "mancer/weaver",
+   "name": "Mancer: Weaver (alpha)",
+   "field": "pout",
+   "from": "7.5e-07",
+   "to": "5e-07",
+   "pct": -33.3,
+   "direction": "down"
+  },
+  {
+   "id": "mancer/weaver",
+   "name": "Mancer: Weaver (alpha)",
+   "field": "pcr",
+   "from": "4e-07",
+   "to": "3e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "2.7e-07",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "1.08e-06",
+   "pct": -10.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pcr",
+   "from": "6e-08",
+   "to": "2.7e-08",
+   "pct": -55.0,
+   "direction": "down"
+  },
+  {
+   "id": "undi95/remm-slerp-l2-13b",
+   "name": "ReMM SLERP 13B",
+   "field": "pin",
+   "from": "3.5e-07",
+   "to": "3e-07",
+   "pct": -14.3,
+   "direction": "down"
+  },
+  {
+   "id": "undi95/remm-slerp-l2-13b",
+   "name": "ReMM SLERP 13B",
+   "field": "pout",
+   "from": "6.5e-07",
+   "to": "5e-07",
+   "pct": -23.1,
+   "direction": "down"
+  },
+  {
+   "id": "undi95/remm-slerp-l2-13b",
+   "name": "ReMM SLERP 13B",
+   "field": "pcr",
+   "from": "3.5e-07",
+   "to": "2e-07",
+   "pct": -42.9,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pin",
+   "from": "1.4e-06",
+   "to": "1.33e-06",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pout",
+   "from": "4.4e-06",
+   "to": "4.18e-06",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pcr",
+   "from": "2.6e-07",
+   "to": "2.47e-07",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pin",
+   "from": "6.2e-09",
+   "to": "7e-09",
+   "pct": 12.9,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.2",
+   "name": "Z.ai: GLM 5.2",
+   "field": "pcr",
+   "from": "5.2e-09",
+   "to": "6e-09",
+   "pct": 15.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pin",
+   "from": "3.3e-08",
+   "to": "4.7e-08",
+   "pct": 42.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pcr",
+   "from": "1.4e-08",
+   "to": "2e-08",
+   "pct": 42.9,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "9.3388e-06",
+   "to": "1.10055e-05",
+   "pct": 17.8,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 466,
+  "added": 6,
+  "removed": 5,
+  "price_changes": 26,
+  "drops": 20,
+  "hikes": 6
+ },
+ "baseline": "2026-11-10"
+}
