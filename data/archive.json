@@ -144,6 +144,30 @@
   "ci": null
  },
  {
+  "id": "liquid/lfm-2.5-2.6b",
+  "name": "LiquidAI: LFM2.5-2.6B",
+  "last_seen": "2026-11-12",
+  "ctx": 128000,
+  "pin": "3.5e-07",
+  "pout": "5e-07",
+  "pcr": "4e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": 7.7
+ },
+ {
+  "id": "liquid/lfm-2.5-2.6b:free",
+  "name": "LiquidAI: LFM2.5-2.6B (free)",
+  "last_seen": "2026-11-12",
+  "ctx": 65536,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": 7.7
+ },
+ {
   "id": "microsoft/wizardlm-2-8x22b",
   "name": "WizardLM-2 8x22B",
   "last_seen": "2026-10-19",

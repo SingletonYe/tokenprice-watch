@@ -1,0 +1,429 @@
+{
+ "date": "2026-11-13",
+ "added": [
+  {
+   "id": "google/gemini-4-hydrogen",
+   "name": "Google: Gemini 4 Hydrogen"
+  },
+  {
+   "id": "google/gemini-4-hydrogen:batch",
+   "name": "Google: Gemini 4 Hydrogen (batch)"
+  },
+  {
+   "id": "particle-ai/particle-1:free",
+   "name": "Particle AI: Particle-1 (free)"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-small",
+   "name": "Thinking Machines: Inkling 2 Small"
+  }
+ ],
+ "removed": [
+  {
+   "id": "liquid/lfm-2.5-2.6b",
+   "name": "LiquidAI: LFM2.5-2.6B"
+  },
+  {
+   "id": "liquid/lfm-2.5-2.6b:free",
+   "name": "LiquidAI: LFM2.5-2.6B (free)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pin",
+   "from": "8.92272e-07",
+   "to": "9e-07",
+   "pct": 0.9,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pout",
+   "from": "1.784544e-06",
+   "to": "1.5e-06",
+   "pct": -15.9,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek: DeepSeek V4 Pro 0423",
+   "field": "pcr",
+   "from": "7.4356e-08",
+   "to": "2.5e-07",
+   "pct": 236.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "3.8e-08",
+   "pct": -74.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "5e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pcr",
+   "from": "3e-09",
+   "to": "1e-08",
+   "pct": 233.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "8e-08",
+   "to": "9e-08",
+   "pct": 12.5,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "1e-07",
+   "to": "3e-07",
+   "pct": 200.0,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "4.6e-08",
+   "to": "5e-08",
+   "pct": 8.7,
+   "direction": "up"
+  },
+  {
+   "id": "ibm-granite/granite-4.2-8b",
+   "name": "IBM: Granite 4.2 8B",
+   "field": "pout",
+   "from": "1.5e-07",
+   "to": "2.5e-07",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pout",
+   "from": "1.08e-06",
+   "to": "9.5e-07",
+   "pct": -12.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pcr",
+   "from": "2.7e-08",
+   "to": "3e-08",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1.5e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "6e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "7.5e-09",
+   "to": "1.5e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pin",
+   "from": "5.32e-07",
+   "to": "5e-07",
+   "pct": -6.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pout",
+   "from": "3.325e-06",
+   "to": "2.5e-06",
+   "pct": -24.8,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k2.5",
+   "name": "MoonshotAI: Kimi K2.5",
+   "field": "pcr",
+   "from": "2.09e-07",
+   "to": "1.5e-07",
+   "pct": -28.2,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pin",
+   "from": "2.375e-07",
+   "to": "2e-06",
+   "pct": 742.1,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pout",
+   "from": "8.7856e-06",
+   "to": "1e-05",
+   "pct": 13.8,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pcr",
+   "from": "1.9e-07",
+   "to": "2e-07",
+   "pct": 5.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pin",
+   "from": "1.7e-07",
+   "to": "6.5e-08",
+   "pct": -61.8,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pout",
+   "from": "2.5e-07",
+   "to": "9.5e-08",
+   "pct": -62.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pcr",
+   "from": "1.53e-07",
+   "to": "5.8e-08",
+   "pct": -62.1,
+   "direction": "down"
+  },
+  {
+   "id": "ricursiveai/ripple-65b-preview",
+   "name": "Ricursive: Ripple 65B Preview",
+   "field": "pin",
+   "from": "2e-07",
+   "to": "1e-07",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "ricursiveai/ripple-65b-preview",
+   "name": "Ricursive: Ripple 65B Preview",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "3e-07",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "ricursiveai/ripple-65b-preview",
+   "name": "Ricursive: Ripple 65B Preview",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "2.5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pin",
+   "from": "4.8e-07",
+   "to": "4.35e-07",
+   "pct": -9.4,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pout",
+   "from": "1.8e-06",
+   "to": "8.7e-07",
+   "pct": -51.7,
+   "direction": "down"
+  },
+  {
+   "id": "xiaomi/mimo-v2.5-pro",
+   "name": "Xiaomi: MiMo-V2.5-Pro",
+   "field": "pcr",
+   "from": "9.6e-08",
+   "to": "3.6e-09",
+   "pct": -96.2,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pin",
+   "from": "3.22e-07",
+   "to": "2.98e-07",
+   "pct": -7.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pout",
+   "from": "9.89e-07",
+   "to": "9.16e-07",
+   "pct": -7.4,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)",
+   "field": "pcr",
+   "from": "1.09e-07",
+   "to": "1.01e-07",
+   "pct": -7.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pin",
+   "from": "6.99e-08",
+   "to": "8.4e-08",
+   "pct": 20.2,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "1.4e-06",
+   "to": "3.6e-06",
+   "pct": 157.1,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pcr",
+   "from": "6.89e-08",
+   "to": "7.9e-08",
+   "pct": 14.7,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "2.2e-08",
+   "to": "3.8e-08",
+   "pct": 72.7,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "4e-07",
+   "to": "5e-07",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "4e-09",
+   "to": "1e-08",
+   "pct": 150.0,
+   "direction": "up"
+  },
+  {
+   "id": "~google/gemini-flash-latest",
+   "name": "Google: Gemini Flash Latest",
+   "field": "pin",
+   "from": "7.5e-07",
+   "to": "1.5e-06",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "~google/gemini-flash-latest",
+   "name": "Google: Gemini Flash Latest",
+   "field": "pout",
+   "from": "3.75e-06",
+   "to": "7.5e-06",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "~google/gemini-flash-latest",
+   "name": "Google: Gemini Flash Latest",
+   "field": "pcw",
+   "from": "4.166666667e-08",
+   "to": "8.333333333e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pout",
+   "from": "1.10055e-05",
+   "to": "1.06066e-05",
+   "pct": -3.6,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 470,
+  "added": 4,
+  "removed": 2,
+  "price_changes": 43,
+  "drops": 20,
+  "hikes": 23
+ },
+ "baseline": "2026-11-12"
+}
