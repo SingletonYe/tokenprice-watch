@@ -1,0 +1,276 @@
+{
+ "date": "2026-11-15",
+ "added": [],
+ "removed": [
+  {
+   "id": "qwen/qwen3-vl-30b-a3b-thinking",
+   "name": "Qwen: Qwen3 VL 30B A3B Thinking"
+  },
+  {
+   "id": "stepfun/step-3.5-flash",
+   "name": "StepFun: Step 3.5 Flash"
+  },
+  {
+   "id": "tencent/hunyuan-a13b-instruct",
+   "name": "Tencent: Hunyuan A13B Instruct"
+  },
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pin",
+   "from": "3.8e-08",
+   "to": "2e-08",
+   "pct": -47.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "1.08e-07",
+   "pct": -78.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pcr",
+   "from": "1e-08",
+   "to": "7e-09",
+   "pct": -30.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "2.9e-08",
+   "pct": -42.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pout",
+   "from": "1.5e-07",
+   "to": "2.52e-07",
+   "pct": 68.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pcr",
+   "from": "4e-09",
+   "to": "3e-09",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "ibm-granite/granite-4.2-8b",
+   "name": "IBM: Granite 4.2 8B",
+   "field": "pout",
+   "from": "2.5e-07",
+   "to": "1.5e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pin",
+   "from": "2e-06",
+   "to": "2.403e-07",
+   "pct": -88.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pout",
+   "from": "1e-05",
+   "to": "8.4023e-06",
+   "pct": -16.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pin",
+   "from": "7e-07",
+   "to": "2.75e-07",
+   "pct": -60.7,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pout",
+   "from": "6e-06",
+   "to": "4.125e-06",
+   "pct": -31.2,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "8.8e-08",
+   "pct": -12.0,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pout",
+   "from": "4.7e-07",
+   "to": "5e-07",
+   "pct": 6.4,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pin",
+   "from": "4e-06",
+   "to": "4.4e-06",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pout",
+   "from": "2e-05",
+   "to": "2.2e-05",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pcr",
+   "from": "4e-07",
+   "to": "4.4e-07",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pcw",
+   "from": "5e-06",
+   "to": "5.5e-06",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "particle-ai/particle-1",
+   "name": "Particle AI: Particle-1",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "6e-08",
+   "pct": 20.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pin",
+   "from": "1.7e-07",
+   "to": "2e-08",
+   "pct": -88.2,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pout",
+   "from": "2.5e-07",
+   "to": "3e-08",
+   "pct": -88.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pcr",
+   "from": "1.53e-07",
+   "to": "1.8e-08",
+   "pct": -88.2,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pin",
+   "from": "6e-07",
+   "to": "4e-07",
+   "pct": -33.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pout",
+   "from": "2.2e-06",
+   "to": "1.75e-06",
+   "pct": -20.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pcr",
+   "from": "1.1e-07",
+   "to": "8e-08",
+   "pct": -27.3,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "3.8e-08",
+   "to": "2e-08",
+   "pct": -47.4,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "1.08e-07",
+   "pct": -78.4,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "1e-08",
+   "to": "7e-09",
+   "pct": -30.0,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 467,
+  "added": 0,
+  "removed": 4,
+  "price_changes": 27,
+  "drops": 20,
+  "hikes": 7
+ },
+ "baseline": "2026-11-14"
+}
