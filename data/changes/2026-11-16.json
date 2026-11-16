@@ -1,0 +1,439 @@
+{
+ "date": "2026-11-16",
+ "added": [
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max"
+  },
+  {
+   "id": "tencent/hy4-flash",
+   "name": "Tencent: Hy4 flash"
+  }
+ ],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pin",
+   "from": "4.34e-08",
+   "to": "6e-08",
+   "pct": 38.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "1.8e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "name": "DeepSeek: DeepSeek V4 Flash 0731",
+   "field": "pcr",
+   "from": "3.5e-08",
+   "to": "1.5e-08",
+   "pct": -57.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "5.07e-08",
+   "to": "1.4e-07",
+   "pct": 176.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "2.028e-07",
+   "to": "4.2e-07",
+   "pct": 107.1,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "1.014e-09",
+   "to": "4.2e-09",
+   "pct": 314.2,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pin",
+   "from": "2e-08",
+   "to": "1.5e-07",
+   "pct": 650.0,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pout",
+   "from": "1.08e-07",
+   "to": "6e-07",
+   "pct": 455.6,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pcr",
+   "from": "7e-09",
+   "to": "3e-09",
+   "pct": -57.1,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pin",
+   "from": "2.9e-08",
+   "to": "3.7e-08",
+   "pct": 27.6,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pout",
+   "from": "2.52e-07",
+   "to": "3.26e-07",
+   "pct": 29.4,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pcr",
+   "from": "3e-09",
+   "to": "4e-09",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "6.75e-08",
+   "to": "9e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "2.25e-07",
+   "to": "3e-07",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "3.75e-08",
+   "to": "5e-08",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pin",
+   "from": "2.7e-07",
+   "to": "2.95e-07",
+   "pct": 9.3,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pout",
+   "from": "9.5e-07",
+   "to": "1.2e-06",
+   "pct": 26.3,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "6e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "7.5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "3e-07",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "1.5e-08",
+   "to": "7.5e-09",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pin",
+   "from": "2.75e-07",
+   "to": "3.58e-07",
+   "pct": 30.2,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pout",
+   "from": "4.125e-06",
+   "to": "5.371e-06",
+   "pct": 30.2,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pcr",
+   "from": "8.8e-08",
+   "to": "1.14e-07",
+   "pct": 29.5,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pin",
+   "from": "4.4e-06",
+   "to": "4e-06",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pout",
+   "from": "2.2e-05",
+   "to": "2e-05",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pcr",
+   "from": "4.4e-07",
+   "to": "4e-07",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-5.6-sol",
+   "name": "OpenAI: GPT-5.6 Sol",
+   "field": "pcw",
+   "from": "5.5e-06",
+   "to": "5e-06",
+   "pct": -9.1,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pin",
+   "from": "3e-08",
+   "to": "7.5e-08",
+   "pct": 150.0,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pout",
+   "from": "1.3e-07",
+   "to": "3e-07",
+   "pct": 130.8,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "3.75e-08",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pin",
+   "from": "6e-07",
+   "to": "4.5e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pout",
+   "from": "3.6e-06",
+   "to": "3e-06",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-397b-a17b",
+   "name": "Qwen: Qwen3.5 397B A17B",
+   "field": "pcr",
+   "from": "1.2e-07",
+   "to": "2.2e-07",
+   "pct": 83.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pin",
+   "from": "2e-08",
+   "to": "1.09e-07",
+   "pct": 445.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pout",
+   "from": "3e-08",
+   "to": "1.6e-07",
+   "pct": 433.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pcr",
+   "from": "1.8e-08",
+   "to": "9.8e-08",
+   "pct": 444.4,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pin",
+   "from": "2e-07",
+   "to": "1.3e-07",
+   "pct": -35.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pout",
+   "from": "1.1e-06",
+   "to": "8.5e-07",
+   "pct": -22.7,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.5-air",
+   "name": "Z.ai: GLM 4.5 Air",
+   "field": "pcr",
+   "from": "3e-08",
+   "to": "2.5e-08",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pin",
+   "from": "8.4e-08",
+   "to": "6.99e-08",
+   "pct": -16.8,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pout",
+   "from": "3.6e-06",
+   "to": "1.4e-06",
+   "pct": -61.1,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3",
+   "name": "Z.ai: GLM 5.3",
+   "field": "pcr",
+   "from": "7.9e-08",
+   "to": "6.89e-08",
+   "pct": -12.8,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pin",
+   "from": "2e-08",
+   "to": "3.6e-08",
+   "pct": 80.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pout",
+   "from": "1.08e-07",
+   "to": "5e-07",
+   "pct": 363.0,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-flash-latest",
+   "name": "DeepSeek: DeepSeek Flash Latest",
+   "field": "pcr",
+   "from": "7e-09",
+   "to": "1e-08",
+   "pct": 42.9,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 469,
+  "added": 2,
+  "removed": 0,
+  "price_changes": 46,
+  "drops": 18,
+  "hikes": 28
+ },
+ "baseline": "2026-11-15"
+}
