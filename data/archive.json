@@ -658,17 +658,5 @@
   "pcw": null,
   "iq": null,
   "ci": null
- },
- {
-  "id": "z-ai/glm-5.2:batch",
-  "name": "Z.ai: GLM 5.2 (batch)",
-  "last_seen": "2026-11-14",
-  "ctx": 1048576,
-  "pin": "3.22e-07",
-  "pout": "9.89e-07",
-  "pcr": "1.09e-07",
-  "pcw": null,
-  "iq": null,
-  "ci": 68.8
  }
 ]

@@ -1,0 +1,372 @@
+{
+ "date": "2026-11-17",
+ "added": [
+  {
+   "id": "z-ai/glm-5.2:batch",
+   "name": "Z.ai: GLM 5.2 (batch)"
+  }
+ ],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "1.4e-07",
+   "to": "3e-07",
+   "pct": 114.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "4.2e-07",
+   "to": "1.2e-06",
+   "pct": 185.7,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "4.2e-09",
+   "to": "6e-09",
+   "pct": 42.9,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "3.6e-08",
+   "pct": -76.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "5e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "field": "pcr",
+   "from": "3e-09",
+   "to": "1e-08",
+   "pct": 233.3,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pin",
+   "from": "3.7e-08",
+   "to": "3.6e-08",
+   "pct": -2.7,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pout",
+   "from": "3.26e-07",
+   "to": "1.5e-07",
+   "pct": -54.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+   "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+   "field": "pcr",
+   "from": "4e-09",
+   "to": "3e-09",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "meta/muse-glimmer-30b",
+   "name": "Meta: Muse Glimmer 30B",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "3.5e-07",
+   "pct": 16.7,
+   "direction": "up"
+  },
+  {
+   "id": "meta/muse-glimmer-30b",
+   "name": "Meta: Muse Glimmer 30B",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "1.5e-06",
+   "pct": 25.0,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pin",
+   "from": "6e-07",
+   "to": "7e-07",
+   "pct": 16.7,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k2.7-code",
+   "name": "MoonshotAI: Kimi K2.7 Code",
+   "field": "pout",
+   "from": "3.5e-06",
+   "to": "3.75e-06",
+   "pct": 7.1,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pin",
+   "from": "3.58e-07",
+   "to": "3.72e-07",
+   "pct": 3.9,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pout",
+   "from": "5.371e-06",
+   "to": "5.583e-06",
+   "pct": 3.9,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro:batch",
+   "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+   "field": "pcr",
+   "from": "1.14e-07",
+   "to": "1e-07",
+   "pct": -12.3,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "name": "NVIDIA: Nemotron 3 Ultra",
+   "field": "pin",
+   "from": "6e-07",
+   "to": "5e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "name": "NVIDIA: Nemotron 3 Ultra",
+   "field": "pout",
+   "from": "2.4e-06",
+   "to": "2.2e-06",
+   "pct": -8.3,
+   "direction": "down"
+  },
+  {
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "name": "NVIDIA: Nemotron 3 Ultra",
+   "field": "pcr",
+   "from": "1.2e-07",
+   "to": "1e-07",
+   "pct": -16.7,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1.8e-08",
+   "pct": -76.0,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "9e-08",
+   "pct": -70.0,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pcr",
+   "from": "3.75e-08",
+   "to": "9e-09",
+   "pct": -76.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pin",
+   "from": "1.09e-07",
+   "to": "1.7e-07",
+   "pct": 56.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pout",
+   "from": "1.6e-07",
+   "to": "2.5e-07",
+   "pct": 56.2,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-9b",
+   "name": "Qwen: Qwen3.5-9B",
+   "field": "pcr",
+   "from": "9.8e-08",
+   "to": "1.53e-07",
+   "pct": 56.1,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max",
+   "field": "pin",
+   "from": "1.5e-06",
+   "to": "1.425e-06",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max",
+   "field": "pout",
+   "from": "4.5e-06",
+   "to": "4.275e-06",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max",
+   "field": "pcr",
+   "from": "7.5e-08",
+   "to": "7.125e-08",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen4-max",
+   "name": "Qwen: Qwen4 Max",
+   "field": "pcw",
+   "from": "1.875e-06",
+   "to": "1.78125e-06",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pin",
+   "from": "3.99e-08",
+   "to": "1.5e-07",
+   "pct": 275.9,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash",
+   "name": "Z.ai: GLM 5.3 Flash",
+   "field": "pout",
+   "from": "7.84e-08",
+   "to": "5e-07",
+   "pct": 537.8,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "2.4e-08",
+   "pct": -52.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-flash:batch",
+   "name": "Z.ai: GLM 5.3 Flash (batch)",
+   "field": "pout",
+   "from": "1.8e-07",
+   "to": "6.9e-08",
+   "pct": -61.7,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-prime",
+   "name": "Z.ai: GLM 5.3 Prime",
+   "field": "pin",
+   "from": "2.8e-06",
+   "to": "1.68e-06",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-prime",
+   "name": "Z.ai: GLM 5.3 Prime",
+   "field": "pout",
+   "from": "8.8e-06",
+   "to": "5.28e-06",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3-prime",
+   "name": "Z.ai: GLM 5.3 Prime",
+   "field": "pcr",
+   "from": "5.6e-07",
+   "to": "3.36e-07",
+   "pct": -40.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pin",
+   "from": "4.5e-07",
+   "to": "2.81e-07",
+   "pct": -37.6,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pout",
+   "from": "2e-06",
+   "to": "1.25e-06",
+   "pct": -37.5,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-5.3:batch",
+   "name": "Z.ai: GLM 5.3 (batch)",
+   "field": "pcr",
+   "from": "1e-07",
+   "to": "6.2e-08",
+   "pct": -38.0,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 470,
+  "added": 1,
+  "removed": 0,
+  "price_changes": 39,
+  "drops": 24,
+  "hikes": 15
+ },
+ "baseline": "2026-11-16"
+}
