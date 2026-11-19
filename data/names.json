@@ -118,6 +118,8 @@
  "google/gemini-4-carbon:batch": "Google: Gemini 4 Carbon (batch)",
  "google/gemini-4-hydrogen": "Google: Gemini 4 Hydrogen",
  "google/gemini-4-hydrogen:batch": "Google: Gemini 4 Hydrogen (batch)",
+ "google/gemini-4-neon": "Google: Gemini 4 Neon",
+ "google/gemini-4-neon:batch": "Google: Gemini 4 Neon (batch)",
  "google/gemini-nano-banana-2.1": "Google: Nano Banana 2.1",
  "google/gemini-omni-1.1-flash": "Google: Gemini Omni 1.1 Flash",
  "google/gemini-omni-1.2-flash": "Google: Gemini Omni 1.2 Flash",
