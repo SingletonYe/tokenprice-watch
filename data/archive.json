@@ -48,6 +48,18 @@
   "ci": null
  },
  {
+  "id": "cohere/north-mini-code:free",
+  "name": "Cohere: North Mini Code (free)",
+  "last_seen": "2026-11-19",
+  "ctx": 256000,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": 3.4,
+  "ci": null
+ },
+ {
   "id": "deepseek/deepseek-r1",
   "name": "DeepSeek: R1",
   "last_seen": "2026-10-19",
@@ -166,6 +178,18 @@
   "pcw": null,
   "iq": null,
   "ci": 7.7
+ },
+ {
+  "id": "meta-llama/llama-3.2-1b-instruct",
+  "name": "Meta: Llama 3.2 1B Instruct",
+  "last_seen": "2026-11-19",
+  "ctx": 60000,
+  "pin": "2.7e-08",
+  "pout": "2.01e-07",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
  },
  {
   "id": "microsoft/wizardlm-2-8x22b",
@@ -658,6 +682,18 @@
   "pcw": null,
   "iq": null,
   "ci": 16.2
+ },
+ {
+  "id": "x-ai/grok-build-0.1",
+  "name": "SpaceXAI: Grok Build 0.1",
+  "last_seen": "2026-11-19",
+  "ctx": 256000,
+  "pin": "1e-06",
+  "pout": "2e-06",
+  "pcr": "2e-07",
+  "pcw": null,
+  "iq": null,
+  "ci": null
  },
  {
   "id": "xingchen-agi/xing4.0-29b-a4b:free",
