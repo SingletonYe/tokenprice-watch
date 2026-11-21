@@ -1,0 +1,353 @@
+{
+ "date": "2026-11-21",
+ "added": [
+  {
+   "id": "radixark/daisyrose-27b",
+   "name": "RadixArk: DaisyRose 27B"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-mini",
+   "name": "Thinking Machines: Inkling 2 Mini"
+  }
+ ],
+ "removed": [
+  {
+   "id": "dots-studio/dots-3-note-preview:free",
+   "name": "Dots Studio: Dots3-Note Preview (free)"
+  },
+  {
+   "id": "meituan/longcat-2.0",
+   "name": "Meituan: LongCat 2.0"
+  },
+  {
+   "id": "tencent/hy3-preview",
+   "name": "Tencent: Hy3 preview"
+  }
+ ],
+ "price_changes": [
+  {
+   "id": "deepseek/deepseek-chat-v3-0324",
+   "name": "DeepSeek: DeepSeek V3 0324",
+   "field": "pin",
+   "from": "2.9e-07",
+   "to": "2.5e-07",
+   "pct": -13.8,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-chat-v3-0324",
+   "name": "DeepSeek: DeepSeek V3 0324",
+   "field": "pout",
+   "from": "1.14e-06",
+   "to": "1e-06",
+   "pct": -12.3,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-chat-v3-0324",
+   "name": "DeepSeek: DeepSeek V3 0324",
+   "field": "pcr",
+   "from": "1.1e-07",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pin",
+   "from": "4.4e-07",
+   "to": "2.156e-07",
+   "pct": -51.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pout",
+   "from": "1.32e-06",
+   "to": "6.468e-07",
+   "pct": -51.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4-flash-vision-exp",
+   "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+   "field": "pcr",
+   "from": "1.4e-08",
+   "to": "6.86e-09",
+   "pct": -51.0,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pin",
+   "from": "3e-07",
+   "to": "4.98e-08",
+   "pct": -83.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "1.992e-07",
+   "pct": -83.4,
+   "direction": "down"
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash",
+   "name": "DeepSeek: DeepSeek V4.1 Flash",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "9.96e-10",
+   "pct": -83.4,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-27b-it",
+   "name": "Google: Gemma 3 27B",
+   "field": "pout",
+   "from": "1.6e-07",
+   "to": "4.5e-07",
+   "pct": 181.2,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-3-27b-it",
+   "name": "Google: Gemma 3 27B",
+   "field": "pcr",
+   "from": null,
+   "to": "4e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pin",
+   "from": "9e-08",
+   "to": "6.75e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "2.25e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it",
+   "name": "Google: Gemma 4 26B A4B ",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "3.75e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pin",
+   "from": "2.95e-07",
+   "to": "2.7e-07",
+   "pct": -8.5,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pout",
+   "from": "1.2e-06",
+   "to": "9.5e-07",
+   "pct": -20.8,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.5",
+   "name": "MiniMax: MiniMax M2.5",
+   "field": "pcr",
+   "from": "6e-08",
+   "to": "3e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pin",
+   "from": "2.1e-07",
+   "to": "6e-07",
+   "pct": 185.7,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pout",
+   "from": "8.4e-07",
+   "to": "1.8e-06",
+   "pct": 114.3,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m2.7",
+   "name": "MiniMax: MiniMax M2.7",
+   "field": "pcr",
+   "from": "4.2e-08",
+   "to": null,
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pin",
+   "from": "7.5e-08",
+   "to": "1.5e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pout",
+   "from": "3e-07",
+   "to": "6e-07",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "minimax/minimax-m3.1-flash",
+   "name": "MiniMax: MiniMax M3.1 Flash",
+   "field": "pcr",
+   "from": "7.5e-09",
+   "to": "1.5e-08",
+   "pct": 100.0,
+   "direction": "up"
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "name": "NVIDIA: Nemotron 3.5 Super VL",
+   "field": "pout",
+   "from": "5e-07",
+   "to": "4.7e-07",
+   "pct": -6.0,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pin",
+   "from": "1.8e-08",
+   "to": "1.7e-08",
+   "pct": -5.6,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pout",
+   "from": "9e-08",
+   "to": "8.5e-08",
+   "pct": -5.6,
+   "direction": "down"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pcr",
+   "from": "9e-09",
+   "to": "8.5e-09",
+   "pct": -5.6,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3-coder-30b-a3b-instruct",
+   "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+   "field": "pin",
+   "from": "1.5e-07",
+   "to": "7e-08",
+   "pct": -53.3,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3-coder-30b-a3b-instruct",
+   "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+   "field": "pout",
+   "from": "6e-07",
+   "to": "2.8e-07",
+   "pct": -53.3,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.6v",
+   "name": "Z.ai: GLM 4.6V",
+   "field": "pcr",
+   "from": "5e-08",
+   "to": "5.5e-08",
+   "pct": 10.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pin",
+   "from": "1.19e-06",
+   "to": "1.4e-06",
+   "pct": 17.6,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pout",
+   "from": "3.74e-06",
+   "to": "4.4e-06",
+   "pct": 17.6,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-5.1",
+   "name": "Z.ai: GLM 5.1",
+   "field": "pcr",
+   "from": "6e-07",
+   "to": "2.6e-07",
+   "pct": -56.7,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "1.485e-07",
+   "to": "9.99e-08",
+   "pct": -32.7,
+   "direction": "down"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "1.5e-07",
+   "to": "9.99e-08",
+   "pct": -33.4,
+   "direction": "down"
+  }
+ ],
+ "counts": {
+  "models": 476,
+  "added": 2,
+  "removed": 3,
+  "price_changes": 35,
+  "drops": 23,
+  "hikes": 12
+ },
+ "baseline": "2026-11-20"
+}

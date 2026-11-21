@@ -72,6 +72,18 @@
   "ci": 24.6
  },
  {
+  "id": "dots-studio/dots-3-note-preview:free",
+  "name": "Dots Studio: Dots3-Note Preview (free)",
+  "last_seen": "2026-11-20",
+  "ctx": 512000,
+  "pin": "0",
+  "pout": "0",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "google/gemini-2.5-flash-lite:batch",
   "name": "Google: Gemini 2.5 Flash Lite (batch)",
   "last_seen": "2026-10-21",
@@ -178,6 +190,18 @@
   "pcw": null,
   "iq": null,
   "ci": 7.7
+ },
+ {
+  "id": "meituan/longcat-2.0",
+  "name": "Meituan: LongCat 2.0",
+  "last_seen": "2026-11-20",
+  "ctx": 1048756,
+  "pin": "3e-07",
+  "pout": "1.2e-06",
+  "pcr": "6e-09",
+  "pcw": null,
+  "iq": null,
+  "ci": null
  },
  {
   "id": "meta-llama/llama-3.2-1b-instruct",
@@ -631,6 +655,18 @@
   "pin": "1.4e-07",
   "pout": "5.7e-07",
   "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
+  "id": "tencent/hy3-preview",
+  "name": "Tencent: Hy3 preview",
+  "last_seen": "2026-11-20",
+  "ctx": 262144,
+  "pin": "1.8e-07",
+  "pout": "6e-07",
+  "pcr": "6e-08",
   "pcw": null,
   "iq": null,
   "ci": null
