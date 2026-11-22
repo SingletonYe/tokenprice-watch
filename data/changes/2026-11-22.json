@@ -1,0 +1,286 @@
+{
+ "date": "2026-11-22",
+ "added": [],
+ "removed": [],
+ "price_changes": [
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pin",
+   "from": "5e-08",
+   "to": "4e-08",
+   "pct": -20.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pout",
+   "from": "1e-07",
+   "to": "5e-08",
+   "pct": -50.0,
+   "direction": "down"
+  },
+  {
+   "id": "google/gemma-3-4b-it",
+   "name": "Google: Gemma 3 4B",
+   "field": "pcr",
+   "from": null,
+   "to": "2e-08",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "gryphe/mythomax-l2-13b",
+   "name": "MythoMax 13B",
+   "field": "pin",
+   "from": "8e-08",
+   "to": "3e-07",
+   "pct": 275.0,
+   "direction": "up"
+  },
+  {
+   "id": "gryphe/mythomax-l2-13b",
+   "name": "MythoMax 13B",
+   "field": "pout",
+   "from": "1.1e-07",
+   "to": "5e-07",
+   "pct": 354.5,
+   "direction": "up"
+  },
+  {
+   "id": "gryphe/mythomax-l2-13b",
+   "name": "MythoMax 13B",
+   "field": "pcr",
+   "from": null,
+   "to": "2e-07",
+   "pct": null,
+   "direction": "up"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pin",
+   "from": "2.53e-07",
+   "to": "2.403e-07",
+   "pct": -5.0,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pout",
+   "from": "8.8e-06",
+   "to": "8.4023e-06",
+   "pct": -4.5,
+   "direction": "down"
+  },
+  {
+   "id": "moonshotai/kimi-k3.1-pro",
+   "name": "MoonshotAI: Kimi K3.1 Pro",
+   "field": "pcr",
+   "from": "1.8e-07",
+   "to": "2e-07",
+   "pct": 11.1,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pin",
+   "from": "1.7e-08",
+   "to": "7.5e-08",
+   "pct": 341.2,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pout",
+   "from": "8.5e-08",
+   "to": "3e-07",
+   "pct": 252.9,
+   "direction": "up"
+  },
+  {
+   "id": "openai/gpt-oss-20b",
+   "name": "OpenAI: gpt-oss-20b",
+   "field": "pcr",
+   "from": "8.5e-09",
+   "to": "3.75e-08",
+   "pct": 341.2,
+   "direction": "up"
+  },
+  {
+   "id": "particle-ai/particle-1",
+   "name": "Particle AI: Particle-1",
+   "field": "pcr",
+   "from": "6e-09",
+   "to": "3e-08",
+   "pct": 400.0,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pin",
+   "from": "1.95e-07",
+   "to": "2.6e-07",
+   "pct": 33.3,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.5-27b",
+   "name": "Qwen: Qwen3.5-27B",
+   "field": "pout",
+   "from": "1.56e-06",
+   "to": "2.6e-06",
+   "pct": 66.7,
+   "direction": "up"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pin",
+   "from": "6e-08",
+   "to": "3.5e-08",
+   "pct": -41.7,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pout",
+   "from": "1.96e-06",
+   "to": "1.5e-06",
+   "pct": -23.5,
+   "direction": "down"
+  },
+  {
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen: Qwen3.8 27B",
+   "field": "pcr",
+   "from": "5.9e-08",
+   "to": "1.75e-08",
+   "pct": -70.3,
+   "direction": "down"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pin",
+   "from": "1.32e-07",
+   "to": "1.4e-07",
+   "pct": 6.1,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pout",
+   "from": "5.28e-07",
+   "to": "5.8e-07",
+   "pct": 9.8,
+   "direction": "up"
+  },
+  {
+   "id": "tencent/hy3",
+   "name": "Tencent: Hy3",
+   "field": "pcr",
+   "from": "3.3e-08",
+   "to": "3.5e-08",
+   "pct": 6.1,
+   "direction": "up"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-mini",
+   "name": "Thinking Machines: Inkling 2 Mini",
+   "field": "pin",
+   "from": "1e-07",
+   "to": "7.5e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-mini",
+   "name": "Thinking Machines: Inkling 2 Mini",
+   "field": "pout",
+   "from": "4e-07",
+   "to": "3e-07",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "thinkingmachines/inkling-2-mini",
+   "name": "Thinking Machines: Inkling 2 Mini",
+   "field": "pcr",
+   "from": "2e-08",
+   "to": "1.5e-08",
+   "pct": -25.0,
+   "direction": "down"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pin",
+   "from": "4e-07",
+   "to": "6e-07",
+   "pct": 50.0,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pout",
+   "from": "1.75e-06",
+   "to": "2.2e-06",
+   "pct": 25.7,
+   "direction": "up"
+  },
+  {
+   "id": "z-ai/glm-4.7",
+   "name": "Z.ai: GLM 4.7",
+   "field": "pcr",
+   "from": "8e-08",
+   "to": "1.1e-07",
+   "pct": 37.5,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pin",
+   "from": "9.99e-08",
+   "to": "1.188e-07",
+   "pct": 18.9,
+   "direction": "up"
+  },
+  {
+   "id": "~deepseek/deepseek-pro-latest",
+   "name": "DeepSeek: DeepSeek Pro Latest",
+   "field": "pcr",
+   "from": "9.99e-08",
+   "to": "1.2e-07",
+   "pct": 20.1,
+   "direction": "up"
+  },
+  {
+   "id": "~moonshotai/kimi-latest",
+   "name": "MoonshotAI: Kimi Latest",
+   "field": "pin",
+   "from": "1.805e-07",
+   "to": "1.824e-07",
+   "pct": 1.1,
+   "direction": "up"
+  }
+ ],
+ "counts": {
+  "models": 476,
+  "added": 0,
+  "removed": 0,
+  "price_changes": 30,
+  "drops": 10,
+  "hikes": 20
+ },
+ "baseline": "2026-11-21"
+}
