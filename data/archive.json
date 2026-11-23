@@ -72,18 +72,6 @@
   "ci": 24.6
  },
  {
-  "id": "dots-studio/dots-3-note-preview:free",
-  "name": "Dots Studio: Dots3-Note Preview (free)",
-  "last_seen": "2026-11-20",
-  "ctx": 512000,
-  "pin": "0",
-  "pout": "0",
-  "pcr": null,
-  "pcw": null,
-  "iq": null,
-  "ci": null
- },
- {
   "id": "google/gemini-2.5-flash-lite:batch",
   "name": "Google: Gemini 2.5 Flash Lite (batch)",
   "last_seen": "2026-10-21",
