@@ -720,6 +720,18 @@
   "ci": null
  },
  {
+  "id": "xiaomi/mimo-v2.5-pro",
+  "name": "Xiaomi: MiMo-V2.5-Pro",
+  "last_seen": "2026-11-23",
+  "ctx": 262144,
+  "pin": "4.8e-07",
+  "pout": "1.8e-06",
+  "pcr": "9.6e-08",
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "xingchen-agi/xing4.0-29b-a4b:free",
   "name": "XingChen: Xing4.0 29B A4B (free)",
   "last_seen": "2026-11-10",
