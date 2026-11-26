@@ -300,42 +300,6 @@
   "ci": null
  },
  {
-  "id": "mistralai/codestral-2508:batch",
-  "name": "Mistral: Codestral 2508 (batch)",
-  "last_seen": "2026-10-26",
-  "ctx": 256000,
-  "pin": "1.5e-07",
-  "pout": "4.5e-07",
-  "pcr": "1.5e-08",
-  "pcw": null,
-  "iq": null,
-  "ci": null
- },
- {
-  "id": "mistralai/ministral-8b-2512:batch",
-  "name": "Mistral: Ministral 3 8B 2512 (batch)",
-  "last_seen": "2026-10-26",
-  "ctx": 262144,
-  "pin": "7.5e-08",
-  "pout": "7.5e-08",
-  "pcr": "7.5e-09",
-  "pcw": null,
-  "iq": 5.5,
-  "ci": 9.7
- },
- {
-  "id": "mistralai/mistral-large-2512:batch",
-  "name": "Mistral: Mistral Large 3 2512 (batch)",
-  "last_seen": "2026-10-26",
-  "ctx": 262144,
-  "pin": "2.5e-07",
-  "pout": "7.5e-07",
-  "pcr": "2.5e-08",
-  "pcw": null,
-  "iq": 9.3,
-  "ci": 20.1
- },
- {
   "id": "mistralai/mistral-medium-3",
   "name": "Mistral: Mistral Medium 3",
   "last_seen": "2026-11-24",
@@ -370,30 +334,6 @@
   "pcw": null,
   "iq": 9.2,
   "ci": 20.5
- },
- {
-  "id": "mistralai/mistral-small-2603:batch",
-  "name": "Mistral: Mistral Small 4 (batch)",
-  "last_seen": "2026-10-26",
-  "ctx": 262144,
-  "pin": "7.5e-08",
-  "pout": "3e-07",
-  "pcr": "7.5e-09",
-  "pcw": null,
-  "iq": 11.3,
-  "ci": 26.6
- },
- {
-  "id": "moonshotai/kimi-k2",
-  "name": "MoonshotAI: Kimi K2 0711",
-  "last_seen": "2026-11-24",
-  "ctx": 131072,
-  "pin": "5.7e-07",
-  "pout": "2.3e-06",
-  "pcr": null,
-  "pcw": null,
-  "iq": null,
-  "ci": null
  },
  {
   "id": "moonshotai/kimi-k2-0905",
