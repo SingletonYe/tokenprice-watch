@@ -588,6 +588,18 @@
   "ci": null
  },
  {
+  "id": "qwen/qwen3-235b-a22b-thinking-2507",
+  "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+  "last_seen": "2026-11-27",
+  "ctx": 128000,
+  "pin": "4.5e-07",
+  "pout": "3.5e-06",
+  "pcr": null,
+  "pcw": null,
+  "iq": null,
+  "ci": null
+ },
+ {
   "id": "qwen/qwen3-next-80b-a3b-thinking",
   "name": "Qwen: Qwen3 Next 80B A3B Thinking",
   "last_seen": "2026-10-28",
